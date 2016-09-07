@@ -1,0 +1,217 @@
+[01-Sep-2016 20:18:46 UTC] PHP Warning:  PDO::__construct(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ubuntu/workspace/resources/backend/entities/Database.php on line 7
+[01-Sep-2016 20:18:46 UTC] PHP Stack trace:
+[01-Sep-2016 20:18:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/entities/Database.php:0
+[01-Sep-2016 20:18:46 UTC] PHP   2. Database->__construct() /home/ubuntu/workspace/resources/backend/entities/Database.php:33
+[01-Sep-2016 20:18:46 UTC] PHP   3. PDO->__construct() /home/ubuntu/workspace/resources/backend/entities/Database.php:7
+[01-Sep-2016 20:19:12 UTC] PHP Warning:  PDO::__construct(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ubuntu/workspace/resources/backend/entities/Database.php on line 7
+[01-Sep-2016 20:19:12 UTC] PHP Stack trace:
+[01-Sep-2016 20:19:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/entities/Database.php:0
+[01-Sep-2016 20:19:12 UTC] PHP   2. Database->__construct() /home/ubuntu/workspace/resources/backend/entities/Database.php:33
+[01-Sep-2016 20:19:12 UTC] PHP   3. PDO->__construct() /home/ubuntu/workspace/resources/backend/entities/Database.php:7
+[01-Sep-2016 20:19:15 UTC] PHP Warning:  PDO::__construct(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ubuntu/workspace/resources/backend/entities/Database.php on line 7
+[01-Sep-2016 20:19:15 UTC] PHP Stack trace:
+[01-Sep-2016 20:19:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/entities/Database.php:0
+[01-Sep-2016 20:19:15 UTC] PHP   2. Database->__construct() /home/ubuntu/workspace/resources/backend/entities/Database.php:33
+[01-Sep-2016 20:19:15 UTC] PHP   3. PDO->__construct() /home/ubuntu/workspace/resources/backend/entities/Database.php:7
+[01-Sep-2016 20:29:17 UTC] PHP Warning:  PDO::__construct(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ubuntu/workspace/resources/backend/entities/Database.php on line 7
+[01-Sep-2016 20:29:17 UTC] PHP Stack trace:
+[01-Sep-2016 20:29:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/entities/Database.php:0
+[01-Sep-2016 20:29:17 UTC] PHP   2. Database->__construct() /home/ubuntu/workspace/resources/backend/entities/Database.php:33
+[01-Sep-2016 20:29:17 UTC] PHP   3. PDO->__construct() /home/ubuntu/workspace/resources/backend/entities/Database.php:7
+[01-Sep-2016 22:25:13 UTC] PHP Fatal error:  Class 'Category' not found in /home/ubuntu/workspace/resources/backend/entities/Database.php on line 28
+[01-Sep-2016 22:25:13 UTC] PHP Stack trace:
+[01-Sep-2016 22:25:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/entities/Database.php:0
+[01-Sep-2016 22:25:13 UTC] PHP   2. Database->getAllCategories() /home/ubuntu/workspace/resources/backend/entities/Database.php:35
+[01-Sep-2016 22:25:49 UTC] PHP Fatal error:  Class 'Category' not found in /home/ubuntu/workspace/resources/backend/entities/Database.php on line 30
+[01-Sep-2016 22:25:49 UTC] PHP Stack trace:
+[01-Sep-2016 22:25:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/entities/Database.php:0
+[01-Sep-2016 22:25:49 UTC] PHP   2. Database->getAllCategories() /home/ubuntu/workspace/resources/backend/entities/Database.php:37
+[01-Sep-2016 22:25:53 UTC] PHP Fatal error:  Class 'Category' not found in /home/ubuntu/workspace/resources/backend/entities/Database.php on line 30
+[01-Sep-2016 22:25:53 UTC] PHP Stack trace:
+[01-Sep-2016 22:25:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/entities/Database.php:0
+[01-Sep-2016 22:25:53 UTC] PHP   2. Database->getAllCategories() /home/ubuntu/workspace/resources/backend/entities/Database.php:37
+[02-Sep-2016 03:19:45 UTC] PHP Fatal error:  Class 'Category' not found in /home/ubuntu/workspace/resources/backend/entities/Database.php on line 30
+[02-Sep-2016 03:19:45 UTC] PHP Stack trace:
+[02-Sep-2016 03:19:45 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/entities/Database.php:0
+[02-Sep-2016 03:19:45 UTC] PHP   2. Database->getAllCategories() /home/ubuntu/workspace/resources/backend/entities/Database.php:37
+[02-Sep-2016 03:20:05 UTC] PHP Fatal error:  Class 'Category' not found in /home/ubuntu/workspace/resources/backend/entities/Database.php on line 30
+[02-Sep-2016 03:20:05 UTC] PHP Stack trace:
+[02-Sep-2016 03:20:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/entities/Database.php:0
+[02-Sep-2016 03:20:05 UTC] PHP   2. Database->getAllCategories() /home/ubuntu/workspace/resources/backend/entities/Database.php:37
+[02-Sep-2016 03:20:29 UTC] PHP Fatal error:  Class 'Category' not found in /home/ubuntu/workspace/resources/backend/entities/Database.php on line 30
+[02-Sep-2016 03:20:29 UTC] PHP Stack trace:
+[02-Sep-2016 03:20:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/entities/Database.php:0
+[02-Sep-2016 03:20:29 UTC] PHP   2. Database->getAllCategories() /home/ubuntu/workspace/resources/backend/entities/Database.php:37
+[02-Sep-2016 03:20:33 UTC] PHP Fatal error:  Class 'Category' not found in /home/ubuntu/workspace/resources/backend/entities/Database.php on line 30
+[02-Sep-2016 03:20:33 UTC] PHP Stack trace:
+[02-Sep-2016 03:20:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/entities/Database.php:0
+[02-Sep-2016 03:20:33 UTC] PHP   2. Database->getAllCategories() /home/ubuntu/workspace/resources/backend/entities/Database.php:37
+[02-Sep-2016 03:21:01 UTC] PHP Fatal error:  Class 'Category' not found in /home/ubuntu/workspace/resources/backend/entities/Database.php on line 38
+[02-Sep-2016 03:21:01 UTC] PHP Stack trace:
+[02-Sep-2016 03:21:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/entities/Database.php:0
+[02-Sep-2016 04:36:03 UTC] PHP Parse error:  syntax error, unexpected '(' in /home/ubuntu/workspace/resources/backend/controllers/categoryController.php on line 8
+[02-Sep-2016 04:36:35 UTC] PHP Parse error:  syntax error, unexpected '(' in /home/ubuntu/workspace/resources/backend/controllers/categoryController.php on line 8
+[02-Sep-2016 04:36:49 UTC] PHP Parse error:  syntax error, unexpected '(' in /home/ubuntu/workspace/resources/backend/controllers/categoryController.php on line 8
+[02-Sep-2016 04:41:21 UTC] PHP Fatal error:  Class 'Database' not found in /home/ubuntu/workspace/resources/backend/controllers/categoryController.php on line 4
+[02-Sep-2016 04:41:21 UTC] PHP Stack trace:
+[02-Sep-2016 04:41:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/controllers/categoryController.php:0
+[02-Sep-2016 04:41:21 UTC] PHP   2. categoryController->allCategories() /home/ubuntu/workspace/resources/backend/controllers/categoryController.php:7
+[02-Sep-2016 08:18:04 UTC] PHP Warning:  require_once(/home/ubuntu/workspace/resources/backend/entitiesdbConfig.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/resources/backend/entities/Database.php on line 2
+[02-Sep-2016 08:18:04 UTC] PHP Stack trace:
+[02-Sep-2016 08:18:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/controllers/categoryController.php:0
+[02-Sep-2016 08:18:04 UTC] PHP   2. require_once() /home/ubuntu/workspace/resources/backend/controllers/categoryController.php:3
+[02-Sep-2016 08:18:04 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/ubuntu/workspace/resources/backend/entitiesdbConfig.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/resources/backend/entities/Database.php on line 2
+[02-Sep-2016 08:18:04 UTC] PHP Stack trace:
+[02-Sep-2016 08:18:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/controllers/categoryController.php:0
+[02-Sep-2016 08:18:04 UTC] PHP   2. require_once() /home/ubuntu/workspace/resources/backend/controllers/categoryController.php:3
+[02-Sep-2016 14:32:04 UTC] PHP Fatal error:  Class 'Product' not found in /home/ubuntu/workspace/resources/backend/entities/Database.php on line 45
+[02-Sep-2016 14:32:04 UTC] PHP Stack trace:
+[02-Sep-2016 14:32:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/entities/Database.php:0
+[02-Sep-2016 14:32:04 UTC] PHP   2. Database->getAllProducts() /home/ubuntu/workspace/resources/backend/entities/Database.php:51
+[02-Sep-2016 15:43:52 UTC] PHP Warning:  Missing argument 1 for Database::getAllProducts(), called in /home/ubuntu/workspace/resources/backend/entities/Database.php on line 58 and defined in /home/ubuntu/workspace/resources/backend/entities/Database.php on line 36
+[02-Sep-2016 15:43:52 UTC] PHP Stack trace:
+[02-Sep-2016 15:43:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/entities/Database.php:0
+[02-Sep-2016 15:43:52 UTC] PHP   2. Database->getAllProducts() /home/ubuntu/workspace/resources/backend/entities/Database.php:58
+[02-Sep-2016 15:43:52 UTC] PHP Warning:  Missing argument 2 for Database::getAllProducts(), called in /home/ubuntu/workspace/resources/backend/entities/Database.php on line 58 and defined in /home/ubuntu/workspace/resources/backend/entities/Database.php on line 36
+[02-Sep-2016 15:43:52 UTC] PHP Stack trace:
+[02-Sep-2016 15:43:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/entities/Database.php:0
+[02-Sep-2016 15:43:52 UTC] PHP   2. Database->getAllProducts() /home/ubuntu/workspace/resources/backend/entities/Database.php:58
+[02-Sep-2016 22:15:42 UTC] PHP Warning:  Missing argument 1 for Product::__construct(), called in /home/ubuntu/workspace/resources/backend/entities/Product.php on line 50 and defined in /home/ubuntu/workspace/resources/backend/entities/Product.php on line 11
+[02-Sep-2016 22:15:42 UTC] PHP Stack trace:
+[02-Sep-2016 22:15:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/entities/Product.php:0
+[02-Sep-2016 22:15:42 UTC] PHP   2. Product->__construct() /home/ubuntu/workspace/resources/backend/entities/Product.php:50
+[02-Sep-2016 22:15:42 UTC] PHP Warning:  Missing argument 2 for Product::__construct(), called in /home/ubuntu/workspace/resources/backend/entities/Product.php on line 50 and defined in /home/ubuntu/workspace/resources/backend/entities/Product.php on line 11
+[02-Sep-2016 22:15:42 UTC] PHP Stack trace:
+[02-Sep-2016 22:15:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/entities/Product.php:0
+[02-Sep-2016 22:15:42 UTC] PHP   2. Product->__construct() /home/ubuntu/workspace/resources/backend/entities/Product.php:50
+[02-Sep-2016 22:15:42 UTC] PHP Warning:  Missing argument 3 for Product::__construct(), called in /home/ubuntu/workspace/resources/backend/entities/Product.php on line 50 and defined in /home/ubuntu/workspace/resources/backend/entities/Product.php on line 11
+[02-Sep-2016 22:15:42 UTC] PHP Stack trace:
+[02-Sep-2016 22:15:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/entities/Product.php:0
+[02-Sep-2016 22:15:42 UTC] PHP   2. Product->__construct() /home/ubuntu/workspace/resources/backend/entities/Product.php:50
+[02-Sep-2016 22:15:42 UTC] PHP Warning:  Missing argument 4 for Product::__construct(), called in /home/ubuntu/workspace/resources/backend/entities/Product.php on line 50 and defined in /home/ubuntu/workspace/resources/backend/entities/Product.php on line 11
+[02-Sep-2016 22:15:42 UTC] PHP Stack trace:
+[02-Sep-2016 22:15:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/entities/Product.php:0
+[02-Sep-2016 22:15:42 UTC] PHP   2. Product->__construct() /home/ubuntu/workspace/resources/backend/entities/Product.php:50
+[02-Sep-2016 22:15:42 UTC] PHP Warning:  Missing argument 5 for Product::__construct(), called in /home/ubuntu/workspace/resources/backend/entities/Product.php on line 50 and defined in /home/ubuntu/workspace/resources/backend/entities/Product.php on line 11
+[02-Sep-2016 22:15:42 UTC] PHP Stack trace:
+[02-Sep-2016 22:15:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/entities/Product.php:0
+[02-Sep-2016 22:15:42 UTC] PHP   2. Product->__construct() /home/ubuntu/workspace/resources/backend/entities/Product.php:50
+[02-Sep-2016 22:15:42 UTC] PHP Warning:  Missing argument 6 for Product::__construct(), called in /home/ubuntu/workspace/resources/backend/entities/Product.php on line 50 and defined in /home/ubuntu/workspace/resources/backend/entities/Product.php on line 11
+[02-Sep-2016 22:15:42 UTC] PHP Stack trace:
+[02-Sep-2016 22:15:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/entities/Product.php:0
+[02-Sep-2016 22:15:42 UTC] PHP   2. Product->__construct() /home/ubuntu/workspace/resources/backend/entities/Product.php:50
+[02-Sep-2016 22:15:42 UTC] PHP Fatal error:  Class 'Database' not found in /home/ubuntu/workspace/resources/backend/entities/Product.php on line 21
+[02-Sep-2016 22:15:42 UTC] PHP Stack trace:
+[02-Sep-2016 22:15:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/entities/Product.php:0
+[02-Sep-2016 22:15:42 UTC] PHP   2. Product->getProuductById() /home/ubuntu/workspace/resources/backend/entities/Product.php:50
+[02-Sep-2016 22:29:49 UTC] PHP Fatal error:  Class 'Database' not found in /home/ubuntu/workspace/resources/backend/entities/Product.php on line 21
+[02-Sep-2016 22:29:49 UTC] PHP Stack trace:
+[02-Sep-2016 22:29:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/entities/Product.php:0
+[02-Sep-2016 22:29:49 UTC] PHP   2. Product::getProuductById() /home/ubuntu/workspace/resources/backend/entities/Product.php:50
+[02-Sep-2016 22:30:32 UTC] PHP Fatal error:  Call to a member function bindParam() on a non-object in /home/ubuntu/workspace/resources/backend/entities/Product.php on line 23
+[02-Sep-2016 22:30:32 UTC] PHP Stack trace:
+[02-Sep-2016 22:30:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/entities/Product.php:0
+[02-Sep-2016 22:30:32 UTC] PHP   2. Product::getProuductById() /home/ubuntu/workspace/resources/backend/entities/Product.php:51
+[02-Sep-2016 22:31:35 UTC] PHP Fatal error:  Call to a member function bindParam() on a non-object in /home/ubuntu/workspace/resources/backend/entities/Product.php on line 23
+[02-Sep-2016 22:31:35 UTC] PHP Stack trace:
+[02-Sep-2016 22:31:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/entities/Product.php:0
+[02-Sep-2016 22:31:35 UTC] PHP   2. Product::getProuductById() /home/ubuntu/workspace/resources/backend/entities/Product.php:51
+[02-Sep-2016 22:50:36 UTC] PHP Fatal error:  Call to a member function bindParam() on a non-object in /home/ubuntu/workspace/resources/backend/entities/Product.php on line 22
+[02-Sep-2016 22:50:36 UTC] PHP Stack trace:
+[02-Sep-2016 22:50:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/entities/Product.php:0
+[02-Sep-2016 22:50:36 UTC] PHP   2. Product::getProuductById() /home/ubuntu/workspace/resources/backend/entities/Product.php:50
+[02-Sep-2016 22:55:12 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/resources/backend/entities/Product.php:26
+Stack trace:
+#0 /home/ubuntu/workspace/resources/backend/entities/Product.php(26): PDOStatement->execute()
+#1 /home/ubuntu/workspace/resources/backend/entities/Product.php(57): Product::getProuductById(1)
+#2 {main}
+  thrown in /home/ubuntu/workspace/resources/backend/entities/Product.php on line 26
+[02-Sep-2016 22:56:34 UTC] PHP Fatal error:  Call to a member function execute() on a non-object in /home/ubuntu/workspace/resources/backend/entities/Product.php on line 25
+[02-Sep-2016 22:56:34 UTC] PHP Stack trace:
+[02-Sep-2016 22:56:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/entities/Product.php:0
+[02-Sep-2016 22:56:34 UTC] PHP   2. Product::getProuductById() /home/ubuntu/workspace/resources/backend/entities/Product.php:56
+[03-Sep-2016 07:29:18 UTC] PHP Fatal error:  Call to undefined method productController::getAllProduct() in /home/ubuntu/workspace/resources/backend/controllers/productController.php on line 14
+[03-Sep-2016 07:29:18 UTC] PHP Stack trace:
+[03-Sep-2016 07:29:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/controllers/productController.php:0
+[03-Sep-2016 07:29:46 UTC] PHP Fatal error:  Call to undefined method productController::getAllProduct() in /home/ubuntu/workspace/resources/backend/controllers/productController.php on line 14
+[03-Sep-2016 07:29:46 UTC] PHP Stack trace:
+[03-Sep-2016 07:29:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/controllers/productController.php:0
+[03-Sep-2016 07:30:05 UTC] PHP Fatal error:  Call to undefined method productController::getAllProduct() in /home/ubuntu/workspace/resources/backend/controllers/productController.php on line 14
+[03-Sep-2016 07:30:05 UTC] PHP Stack trace:
+[03-Sep-2016 07:30:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/controllers/productController.php:0
+[03-Sep-2016 15:39:36 UTC] PHP Fatal error:  Class 'Database' not found in /home/ubuntu/workspace/resources/backend/entities/Category.php on line 20
+[03-Sep-2016 15:39:36 UTC] PHP Stack trace:
+[03-Sep-2016 15:39:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/entities/Category.php:0
+[03-Sep-2016 15:39:36 UTC] PHP   2. Category::getCategoryById() /home/ubuntu/workspace/resources/backend/entities/Category.php:33
+[03-Sep-2016 22:45:32 UTC] PHP Fatal error:  Call to undefined function encrypt() in /home/ubuntu/workspace/resources/backend/entities/User.php on line 4
+[03-Sep-2016 22:45:32 UTC] PHP Stack trace:
+[03-Sep-2016 22:45:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/entities/User.php:0
+[03-Sep-2016 22:45:46 UTC] PHP Fatal error:  Call to undefined function bcrypt() in /home/ubuntu/workspace/resources/backend/entities/User.php on line 4
+[03-Sep-2016 22:45:46 UTC] PHP Stack trace:
+[03-Sep-2016 22:45:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/entities/User.php:0
+[03-Sep-2016 22:46:06 UTC] PHP Fatal error:  Call to undefined function sh() in /home/ubuntu/workspace/resources/backend/entities/User.php on line 4
+[03-Sep-2016 22:46:06 UTC] PHP Stack trace:
+[03-Sep-2016 22:46:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/entities/User.php:0
+[03-Sep-2016 22:52:48 UTC] PHP Fatal error:  Call to undefined function sh() in /home/ubuntu/workspace/resources/backend/entities/User.php on line 4
+[03-Sep-2016 22:52:48 UTC] PHP Stack trace:
+[03-Sep-2016 22:52:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/entities/User.php:0
+[03-Sep-2016 23:01:30 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ubuntu/workspace/resources/backend/entities/User.php on line 5
+[03-Sep-2016 23:01:40 UTC] PHP Fatal error:  Call to undefined function sha() in /home/ubuntu/workspace/resources/backend/entities/User.php on line 8
+[03-Sep-2016 23:01:40 UTC] PHP Stack trace:
+[03-Sep-2016 23:01:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/entities/User.php:0
+[03-Sep-2016 23:02:01 UTC] PHP Fatal error:  Call to undefined function sha() in /home/ubuntu/workspace/resources/backend/entities/User.php on line 8
+[03-Sep-2016 23:02:01 UTC] PHP Stack trace:
+[03-Sep-2016 23:02:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/entities/User.php:0
+[03-Sep-2016 23:02:04 UTC] PHP Fatal error:  Call to undefined function sha() in /home/ubuntu/workspace/resources/backend/entities/User.php on line 8
+[03-Sep-2016 23:02:04 UTC] PHP Stack trace:
+[03-Sep-2016 23:02:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/entities/User.php:0
+[03-Sep-2016 23:02:11 UTC] PHP Fatal error:  Call to undefined function sha() in /home/ubuntu/workspace/resources/backend/entities/User.php on line 8
+[03-Sep-2016 23:02:11 UTC] PHP Stack trace:
+[03-Sep-2016 23:02:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/entities/User.php:0
+[03-Sep-2016 23:02:20 UTC] PHP Fatal error:  Call to undefined function sha() in /home/ubuntu/workspace/resources/backend/entities/User.php on line 8
+[03-Sep-2016 23:02:20 UTC] PHP Stack trace:
+[03-Sep-2016 23:02:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/entities/User.php:0
+[03-Sep-2016 23:02:35 UTC] PHP Fatal error:  Call to undefined function sha() in /home/ubuntu/workspace/resources/backend/entities/User.php on line 8
+[03-Sep-2016 23:02:35 UTC] PHP Stack trace:
+[03-Sep-2016 23:02:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/entities/User.php:0
+[03-Sep-2016 23:49:59 UTC] PHP Fatal error:  Class 'Database' not found in /home/ubuntu/workspace/resources/backend/entities/User.php on line 20
+[03-Sep-2016 23:49:59 UTC] PHP Stack trace:
+[03-Sep-2016 23:49:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/entities/User.php:0
+[03-Sep-2016 23:49:59 UTC] PHP   2. User::getUser() /home/ubuntu/workspace/resources/backend/entities/User.php:39
+[04-Sep-2016 00:13:43 UTC] PHP Fatal error:  Class 'User' not found in /home/ubuntu/workspace/resources/backend/controllers/userController.php on line 5
+[04-Sep-2016 00:13:43 UTC] PHP Stack trace:
+[04-Sep-2016 00:13:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/controllers/userController.php:0
+[04-Sep-2016 00:13:43 UTC] PHP   2. userController->isAuthorized() /home/ubuntu/workspace/resources/backend/controllers/userController.php:10
+[04-Sep-2016 17:57:34 UTC] PHP Parse error:  syntax error, unexpected 'var_dump' (T_STRING), expecting function (T_FUNCTION) in /home/ubuntu/workspace/resources/backend/entities/User.php on line 37
+[04-Sep-2016 17:58:33 UTC] PHP Parse error:  syntax error, unexpected 'var_dump' (T_STRING), expecting function (T_FUNCTION) in /home/ubuntu/workspace/resources/backend/entities/User.php on line 37
+[04-Sep-2016 17:58:51 UTC] PHP Parse error:  syntax error, unexpected 'var_dump' (T_STRING), expecting function (T_FUNCTION) in /home/ubuntu/workspace/resources/backend/entities/User.php on line 37
+[04-Sep-2016 17:58:54 UTC] PHP Parse error:  syntax error, unexpected 'var_dump' (T_STRING), expecting function (T_FUNCTION) in /home/ubuntu/workspace/resources/backend/entities/User.php on line 37
+[04-Sep-2016 18:10:41 UTC] PHP Fatal error:  Class 'User' not found in /home/ubuntu/workspace/resources/backend/controllers/userController.php on line 5
+[04-Sep-2016 18:10:41 UTC] PHP Stack trace:
+[04-Sep-2016 18:10:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/controllers/userController.php:0
+[04-Sep-2016 18:10:41 UTC] PHP   2. userController->isAuthorized() /home/ubuntu/workspace/resources/backend/controllers/userController.php:10
+[04-Sep-2016 22:04:37 UTC] PHP Parse error:  syntax error, unexpected '!' in /home/ubuntu/workspace/resources/backend/controllers/userController.php on line 6
+[04-Sep-2016 22:27:35 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/ubuntu/workspace/resources/backend/controllers/userController.php on line 15
+[04-Sep-2016 22:30:11 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/ubuntu/workspace/resources/backend/controllers/userController.php on line 15
+[04-Sep-2016 22:31:05 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/ubuntu/workspace/resources/backend/controllers/userController.php on line 15
+[04-Sep-2016 22:31:21 UTC] PHP Fatal error:  Call to undefined method userController::getUser() in /home/ubuntu/workspace/resources/backend/controllers/userController.php on line 15
+[04-Sep-2016 22:31:21 UTC] PHP Stack trace:
+[04-Sep-2016 22:31:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/controllers/userController.php:0
+[07-Sep-2016 11:12:03 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ubuntu/workspace/resources/backend/controllers/productController.php on line 23
+[07-Sep-2016 11:12:03 UTC] PHP Stack trace:
+[07-Sep-2016 11:12:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/controllers/productController.php:0
+[07-Sep-2016 11:12:03 UTC] PHP   2. json_decode() /home/ubuntu/workspace/resources/backend/controllers/productController.php:23
+[07-Sep-2016 11:12:03 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ubuntu/workspace/resources/backend/controllers/productController.php on line 23
+[07-Sep-2016 11:12:03 UTC] PHP Stack trace:
+[07-Sep-2016 11:12:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/controllers/productController.php:0
+[07-Sep-2016 11:12:03 UTC] PHP   2. json_decode() /home/ubuntu/workspace/resources/backend/controllers/productController.php:23
+[07-Sep-2016 11:12:03 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ubuntu/workspace/resources/backend/controllers/productController.php on line 23
+[07-Sep-2016 11:12:03 UTC] PHP Stack trace:
+[07-Sep-2016 11:12:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/controllers/productController.php:0
+[07-Sep-2016 11:12:03 UTC] PHP   2. json_decode() /home/ubuntu/workspace/resources/backend/controllers/productController.php:23
+[07-Sep-2016 11:50:38 UTC] PHP Fatal error:  Call to a member function jsonSerialize() on a non-object in /home/ubuntu/workspace/resources/backend/controllers/categoryController.php on line 24
+[07-Sep-2016 11:50:38 UTC] PHP Stack trace:
+[07-Sep-2016 11:50:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/controllers/categoryController.php:0
+[07-Sep-2016 11:50:38 UTC] PHP   2. categoryController->ProductsUnderCategory() /home/ubuntu/workspace/resources/backend/controllers/categoryController.php:31
+[07-Sep-2016 17:19:19 UTC] PHP Parse error:  syntax error, unexpected 'var_dump' (T_STRING), expecting ',' or ';' in /home/ubuntu/workspace/resources/backend/entities/Database.php on line 62
+[07-Sep-2016 17:43:37 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/ubuntu/workspace/resources/backend/controllers/categoryController.php on line 25
