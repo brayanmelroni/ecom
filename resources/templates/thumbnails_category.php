@@ -12,7 +12,7 @@
                         <h3>{$stdProduct->title}</h3>
                         <p>{$stdProduct->short_description}</p>
                         <p>
-                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="item.php?prod_id={$stdProduct->prod_id}" class="btn btn-default">More Info</a>
+                            <a href="/resources/backend/controllers/cartController.php?add={$stdProduct->prod_id}" class="btn btn-primary">Add to Cart</a> <a href="item.php?prod_id={$stdProduct->prod_id}" class="btn btn-default">More Info</a>
                         </p>
                     </div>
     </div>

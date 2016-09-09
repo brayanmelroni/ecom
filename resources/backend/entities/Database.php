@@ -36,7 +36,7 @@ class Database{
             $products=[];
             foreach($this->pdoStatement("select * from product","Products not found") as $result){
                 $products[]=new Product($result->prod_id,$result->title,$result->categoryId,$result->price,$result->long_description,
-                $result->short_description,$result->prod_image);
+                $result->short_description,$result->prod_image,$result->quantity);
             }
             return $products;
         }

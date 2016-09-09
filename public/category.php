@@ -21,7 +21,7 @@
             </p>
         </header>
 
-        <hr>
+        
 
         <!-- Title -->
         <div class="row">
@@ -47,3 +47,4 @@
 </body>
 
 </html>
+

@@ -16,18 +16,22 @@
                     <a href="shop.php">Shop</a>
                 </li>
                 <li>
-                    <a href="login.php">Login</a>
-                </li>
-                <li>
                     <a href="admin">Admin</a>
                 </li>
-                <li>
-                    <a href="checkout.php">Checkout</a>
-                </li>
+                
                 <li>
                     <a href="contact.php">Contact</a>
                 </li>
 
+            </ul>
+            
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="login.php">Sign In</a>
+                </li>
+                <li>
+                    <a href="cart.php">Basket</a>
+                </li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->

@@ -16,7 +16,7 @@
                 <p>The Ultimate second hand book store in Islington</p>
             </header>
 
-            <hr>
+            
        
             <!-- Page Features -->
             <div class="row text-center">

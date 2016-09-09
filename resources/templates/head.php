@@ -26,5 +26,11 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-    
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(window).on('beforeunload', function() {
+                $(window).scrollTop(0);
+            });
+        });
+    </script>
 </head>

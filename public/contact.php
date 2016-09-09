@@ -56,11 +56,12 @@
             include(dirname(__FILE__)."/../resources/backend/controllers/mailController.php"); 
             if($_POST["submit"]!=null){
                 if((new mailController())->sendMessage($_POST["name"],$_POST["email"],$_POST["subject"],$_POST["message"])){
-                    echo "<h2 class='text-center alert-success'>Your message has been sent</h2>";
+                    echo "<div class='text-center alert alert-success'>Your message has been sent.</div>";
                     $_POST["name"]=null;  $_POST["email"]=null; $_POST["subject"]=null; $_POST["message"]=null;
+                   
                 }    
                 else 
-                    echo "<h2 class='text-center bg-warning'>An error occured</h2>";
+                    echo "<div class='text-center bg-warning'>An error occured</div>";
             }
             require_once(TEMPLATE_DIR.DS."footer.php"); ?>
     </body>

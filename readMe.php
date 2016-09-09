@@ -52,6 +52,25 @@
         ALTER TABLE category CONVERT TO CHARACTER SET utf8 COLLATE utf8_unicode_ci;
         ALTER TABLE product CONVERT TO CHARACTER SET utf8 COLLATE utf8_unicode_ci;
         ALTER TABLE user CONVERT TO CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+        
+        <a class="btn btn-primary" target="_blank" href="/resources/backend/controllers/cartController.php?add={$stdProduct->prod_id}">Add to cart</a>
+        target="_blank" opens in a new page.
+        
+        Go to the top of a page on load
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $(window).on('beforeunload', function() {
+                $(window).scrollTop(0);
+            });
+        });
+        </script>
+        
+        
+        jS: Go back to previous page
+        echo "<script> history.go(-1);</script>";
 
+        redirect : Java Script
+        echo "<script>window.location='"."/public/cart.php"."'</script>";
+        
 */
 ?>

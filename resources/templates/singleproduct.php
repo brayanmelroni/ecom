@@ -27,7 +27,7 @@
                         <p>{$product->short_description}</p>
                         <form action="">
                             <div class="form-group">
-                                <input type="submit" class="btn btn-primary" value="ADD TO CART">
+                                <a href="/resources/backend/controllers/cartController.php?add={$product->prod_id}" class="btn btn-primary">Add to Cart</a>
                             </div>
                         </form>
 
@@ -38,7 +38,7 @@
         </div>
 
 </div><!--Row For Image and Short Description-->
-<hr>
+
 <!--Row for Tab Panel-->
 
 <div class="row">

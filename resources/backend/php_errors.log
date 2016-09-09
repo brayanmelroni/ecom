@@ -215,3 +215,45 @@ Stack trace:
 [07-Sep-2016 11:50:38 UTC] PHP   2. categoryController->ProductsUnderCategory() /home/ubuntu/workspace/resources/backend/controllers/categoryController.php:31
 [07-Sep-2016 17:19:19 UTC] PHP Parse error:  syntax error, unexpected 'var_dump' (T_STRING), expecting ',' or ';' in /home/ubuntu/workspace/resources/backend/entities/Database.php on line 62
 [07-Sep-2016 17:43:37 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/ubuntu/workspace/resources/backend/controllers/categoryController.php on line 25
+[08-Sep-2016 15:04:35 UTC] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/ubuntu/workspace/resources/backend/controllers/cartController.php on line 2
+[08-Sep-2016 15:04:35 UTC] PHP Stack trace:
+[08-Sep-2016 15:04:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/controllers/cartController.php:0
+[08-Sep-2016 15:04:35 UTC] PHP   2. session_destroy() /home/ubuntu/workspace/resources/backend/controllers/cartController.php:2
+[08-Sep-2016 15:04:53 UTC] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/ubuntu/workspace/resources/backend/controllers/cartController.php on line 2
+[08-Sep-2016 15:04:53 UTC] PHP Stack trace:
+[08-Sep-2016 15:04:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/controllers/cartController.php:0
+[08-Sep-2016 15:04:53 UTC] PHP   2. session_destroy() /home/ubuntu/workspace/resources/backend/controllers/cartController.php:2
+[08-Sep-2016 16:54:06 UTC] PHP Warning:  require_once(/resources/backend/controllers/productController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/resources/backend/controllers/cartController.php on line 3
+[08-Sep-2016 16:54:06 UTC] PHP Stack trace:
+[08-Sep-2016 16:54:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/controllers/cartController.php:0
+[08-Sep-2016 16:54:06 UTC] PHP Fatal error:  require_once(): Failed opening required '/resources/backend/controllers/productController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/resources/backend/controllers/cartController.php on line 3
+[08-Sep-2016 16:54:06 UTC] PHP Stack trace:
+[08-Sep-2016 16:54:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/controllers/cartController.php:0
+[08-Sep-2016 16:54:36 UTC] PHP Warning:  require_once(/resources/backend/controllers/productController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/resources/backend/controllers/cartController.php on line 3
+[08-Sep-2016 16:54:36 UTC] PHP Stack trace:
+[08-Sep-2016 16:54:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/controllers/cartController.php:0
+[08-Sep-2016 16:54:36 UTC] PHP Fatal error:  require_once(): Failed opening required '/resources/backend/controllers/productController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/resources/backend/controllers/cartController.php on line 3
+[08-Sep-2016 16:54:36 UTC] PHP Stack trace:
+[08-Sep-2016 16:54:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/controllers/cartController.php:0
+[08-Sep-2016 20:28:50 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/ubuntu/workspace/resources/backend/controllers/cartController.php on line 29
+[08-Sep-2016 20:56:48 UTC] PHP Parse error:  syntax error, unexpected 'HTTP_REFERER' (T_STRING), expecting ',' or ';' in /home/ubuntu/workspace/resources/backend/controllers/cartController.php on line 45
+[08-Sep-2016 20:57:18 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/ubuntu/workspace/resources/backend/controllers/cartController.php on line 45
+[08-Sep-2016 20:58:14 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/ubuntu/workspace/resources/backend/controllers/cartController.php on line 46
+[08-Sep-2016 20:58:55 UTC] PHP Parse error:  syntax error, unexpected '</script>' in /home/ubuntu/workspace/resources/backend/controllers/cartController.php on line 47
+[08-Sep-2016 21:17:51 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/ubuntu/workspace/resources/backend/controllers/cartController.php on line 47
+[08-Sep-2016 21:18:43 UTC] PHP Parse error:  syntax error, unexpected 'var' (T_VAR) in /home/ubuntu/workspace/resources/backend/controllers/cartController.php on line 46
+[08-Sep-2016 21:19:02 UTC] PHP Parse error:  syntax error, unexpected 'var' (T_VAR) in /home/ubuntu/workspace/resources/backend/controllers/cartController.php on line 46
+[08-Sep-2016 21:19:04 UTC] PHP Parse error:  syntax error, unexpected 'var' (T_VAR) in /home/ubuntu/workspace/resources/backend/controllers/cartController.php on line 46
+[08-Sep-2016 21:19:27 UTC] PHP Parse error:  syntax error, unexpected 'var' (T_VAR) in /home/ubuntu/workspace/resources/backend/controllers/cartController.php on line 46
+[08-Sep-2016 21:19:50 UTC] PHP Parse error:  syntax error, unexpected 'var' (T_VAR) in /home/ubuntu/workspace/resources/backend/controllers/cartController.php on line 46
+[08-Sep-2016 21:19:52 UTC] PHP Parse error:  syntax error, unexpected 'var' (T_VAR) in /home/ubuntu/workspace/resources/backend/controllers/cartController.php on line 46
+[08-Sep-2016 21:20:07 UTC] PHP Parse error:  syntax error, unexpected 'var' (T_VAR) in /home/ubuntu/workspace/resources/backend/controllers/cartController.php on line 46
+[09-Sep-2016 10:19:04 UTC] PHP Fatal error:  Call to undefined method productController::handleCart() in /home/ubuntu/workspace/resources/backend/controllers/proxyCartController.php on line 39
+[09-Sep-2016 10:19:04 UTC] PHP Stack trace:
+[09-Sep-2016 10:19:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/controllers/proxyCartController.php:0
+[09-Sep-2016 10:19:44 UTC] PHP Fatal error:  Call to undefined method productController::handleCart() in /home/ubuntu/workspace/resources/backend/controllers/proxyCartController.php on line 40
+[09-Sep-2016 10:19:44 UTC] PHP Stack trace:
+[09-Sep-2016 10:19:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/controllers/proxyCartController.php:0
+[09-Sep-2016 10:20:13 UTC] PHP Fatal error:  Call to undefined method productController::handleCart() in /home/ubuntu/workspace/resources/backend/controllers/proxyCartController.php on line 40
+[09-Sep-2016 10:20:13 UTC] PHP Stack trace:
+[09-Sep-2016 10:20:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/resources/backend/controllers/proxyCartController.php:0
