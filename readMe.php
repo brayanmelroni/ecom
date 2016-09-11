@@ -72,5 +72,53 @@
         redirect : Java Script
         echo "<script>window.location='"."/public/cart.php"."'</script>";
         
+        8. Paypal Integration: 
+            8.1 create a Sand Box account
+                There are two types of accounts
+                    1. Business account (Seller account) login details:
+                        brayanmelroni1-facilitator@gmail.com
+                        1qaz2wsx
+                        Go to selling preferences->Website payement references.-> Make auto return to your website on. and set the 
+                        website address to come back. 
+                    
+                    2. Personal accounts(Buyer account)
+                       brayanmelroni1-buyer@gmail.com
+                       1qaz2wsx
+                
+                Paypal input forms:
+                    https://developer.paypal.com/docs/classic/paypal-payments-standard/integration-guide/formbasics/
+                    See Sample HTML Code for Overriding Addresses Stored With PayPal section
+                    One of the Allowable Values for the cmd HTML Variable is _cart. 
+            
+            8.2 Parameters Paypal will send after successful payment:
+                amt=400 --> amount
+                cc=USA  --> currency
+                tx=55666666-> transaction Id
+                st=completed -> status
+                
+        // Only execute once,  change the default beahaviour of a submit button. 
+       $('#inputCheckout').one('click', function() {
+                
+                $.post( '/resources/backend/webservices/isLoggedIn.php').success(function(resp){
+                    isLoggedIn = $.parseJSON(resp);
+                    
+                    if(isLoggedIn==true){
+                        $('#inputCheckout').click();
+                        return true;
+                    }
+                    else{
+                        window.location.href='/public/login.php';
+                        return false; 
+                    }
+                });
+                
+                
+            });
+           
+                    
+                
+                        
+                
+        
 */
 ?>

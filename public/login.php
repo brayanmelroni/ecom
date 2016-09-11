@@ -31,12 +31,15 @@
         </div>
         <?php include(dirname(__FILE__)."/../resources/backend/controllers/userController.php"); 
                 if($_POST["username"]!=null && $_POST["password"]!=null){
-                    $user=(new userController())->getUserIfAuthorized($_POST["username"],$_POST["password"]);
+                    $userController=new userController();
+                    $user=json_decode($userController->getUserIfAuthorized($_POST["username"],$_POST["password"]));
                     if($user==!null){
-                        if((new userController())->getUserGroup($user)=="admin")
+                        $currentUserId=$user->user_id;
+                        $userController->storeCurrentUserId($currentUserId);
+                        if($userController->userGroup($currentUserId)=="admin")
                             echo "<script>window.location='admin'</script>";
                         else
-                            echo "<script>window.location='shop.php'</script>";
+                            echo "<script>window.location='cart.php'</script>";
                     }
                     else
                         echo "<h2 class='text-center bg-warning'>Your e-mail or password was incorrect. Please try again.</h2>";

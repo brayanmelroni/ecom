@@ -26,6 +26,12 @@ class productController{
     public function getProductCategory($id){
         return Product::getProuductById($id)->getCategoryId();
     }
+    
+    public function findAndSetQuantity($id,$newQuantity){
+        return Product::getProuductById($id)->setQuantity($newQuantity);
+    }
 }
+    
+    //(new ProductController())->findAndSetQuantity(2,12); 
     
 ?>

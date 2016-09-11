@@ -27,7 +27,7 @@
                         <p>{$product->short_description}</p>
                         <form action="">
                             <div class="form-group">
-                                <a href="/resources/backend/controllers/cartController.php?add={$product->prod_id}" class="btn btn-primary">Add to Cart</a>
+                                <a href="/resources/backend/controllers/proxyCartController.php?add={$product->prod_id}" class="btn btn-primary">Add to Cart</a>
                             </div>
                         </form>
 

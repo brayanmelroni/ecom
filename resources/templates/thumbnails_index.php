@@ -12,7 +12,7 @@
         <div class="caption">
             <h4 class="pull-right">&#163;{$stdProduct->price}</h4>
             <h4><a href="item.php?prod_id={$stdProduct->prod_id}">{$stdProduct->title}</a></h4>
-            <p>See more snippets like this online store item at <a target="_blank" href="http://www.bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
+            <p>{$stdProduct->short_description}</p>
             <a class="btn btn-primary" href="/resources/backend/controllers/proxyCartController.php?add={$stdProduct->prod_id}">Add to cart</a>
         </div>
     </div>

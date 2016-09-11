@@ -194,3 +194,102 @@
 [09-Sep-2016 12:01:22 UTC] PHP Fatal error:  require_once(): Failed opening required '/../resources/backend/controllers/cartController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/public/cart.php on line 30
 [09-Sep-2016 12:01:22 UTC] PHP Stack trace:
 [09-Sep-2016 12:01:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/cart.php:0
+[09-Sep-2016 21:00:59 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/ubuntu/workspace/public/cart.php on line 75
+[09-Sep-2016 21:01:32 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/ubuntu/workspace/public/cart.php on line 75
+[09-Sep-2016 21:05:41 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/public/cart.php on line 119
+[09-Sep-2016 21:05:51 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/public/cart.php on line 119
+[09-Sep-2016 21:06:16 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/public/cart.php on line 119
+[10-Sep-2016 23:39:47 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/ubuntu/workspace/public/cart.php on line 90
+[10-Sep-2016 23:40:23 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/ubuntu/workspace/public/cart.php on line 90
+[11-Sep-2016 01:22:20 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/public/cart.php on line 33
+[11-Sep-2016 01:22:59 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/public/cart.php on line 32
+[11-Sep-2016 01:23:44 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/public/cart.php on line 27
+[11-Sep-2016 01:24:52 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/public/cart.php on line 27
+[11-Sep-2016 01:25:27 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/public/cart.php on line 27
+[11-Sep-2016 01:25:48 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/public/cart.php on line 27
+[11-Sep-2016 01:25:59 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/public/cart.php on line 27
+[11-Sep-2016 01:26:17 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/public/cart.php on line 27
+[11-Sep-2016 01:26:19 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/public/cart.php on line 27
+[11-Sep-2016 01:36:19 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/public/cart.php on line 32
+[11-Sep-2016 01:36:23 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/public/cart.php on line 32
+[11-Sep-2016 02:37:06 UTC] PHP Parse error:  syntax error, unexpected '$connection' (T_VARIABLE), expecting function (T_FUNCTION) in /home/ubuntu/workspace/resources/backend/entities/SQLSupport.php on line 4
+[11-Sep-2016 02:37:06 UTC] PHP Stack trace:
+[11-Sep-2016 02:37:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[11-Sep-2016 02:37:06 UTC] PHP   2. include() /home/ubuntu/workspace/public/index.php:13
+[11-Sep-2016 02:37:06 UTC] PHP   3. require_once() /home/ubuntu/workspace/resources/templates/side_nav.php:5
+[11-Sep-2016 02:37:06 UTC] PHP   4. require_once() /home/ubuntu/workspace/resources/backend/controllers/categoryController.php:3
+[11-Sep-2016 02:37:06 UTC] PHP   5. require_once() /home/ubuntu/workspace/resources/backend/entities/Database.php:3
+[11-Sep-2016 02:37:11 UTC] PHP Parse error:  syntax error, unexpected '$connection' (T_VARIABLE), expecting function (T_FUNCTION) in /home/ubuntu/workspace/resources/backend/entities/SQLSupport.php on line 4
+[11-Sep-2016 02:37:11 UTC] PHP Stack trace:
+[11-Sep-2016 02:37:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/shop.php:0
+[11-Sep-2016 02:37:11 UTC] PHP   2. include() /home/ubuntu/workspace/public/shop.php:23
+[11-Sep-2016 02:37:11 UTC] PHP   3. require_once() /home/ubuntu/workspace/resources/templates/thumbnails_index.php:3
+[11-Sep-2016 02:37:11 UTC] PHP   4. require_once() /home/ubuntu/workspace/resources/backend/controllers/productController.php:2
+[11-Sep-2016 02:37:11 UTC] PHP   5. require_once() /home/ubuntu/workspace/resources/backend/entities/Database.php:3
+[11-Sep-2016 02:37:14 UTC] PHP Parse error:  syntax error, unexpected '$connection' (T_VARIABLE), expecting function (T_FUNCTION) in /home/ubuntu/workspace/resources/backend/entities/SQLSupport.php on line 4
+[11-Sep-2016 02:37:14 UTC] PHP Stack trace:
+[11-Sep-2016 02:37:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/shop.php:0
+[11-Sep-2016 02:37:14 UTC] PHP   2. include() /home/ubuntu/workspace/public/shop.php:23
+[11-Sep-2016 02:37:14 UTC] PHP   3. require_once() /home/ubuntu/workspace/resources/templates/thumbnails_index.php:3
+[11-Sep-2016 02:37:14 UTC] PHP   4. require_once() /home/ubuntu/workspace/resources/backend/controllers/productController.php:2
+[11-Sep-2016 02:37:14 UTC] PHP   5. require_once() /home/ubuntu/workspace/resources/backend/entities/Database.php:3
+[11-Sep-2016 02:37:16 UTC] PHP Parse error:  syntax error, unexpected '$connection' (T_VARIABLE), expecting function (T_FUNCTION) in /home/ubuntu/workspace/resources/backend/entities/SQLSupport.php on line 4
+[11-Sep-2016 02:37:16 UTC] PHP Stack trace:
+[11-Sep-2016 02:37:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/cart.php:0
+[11-Sep-2016 02:37:16 UTC] PHP   2. require_once() /home/ubuntu/workspace/public/cart.php:22
+[11-Sep-2016 02:37:16 UTC] PHP   3. require_once() /home/ubuntu/workspace/resources/backend/controllers/userController.php:2
+[11-Sep-2016 02:37:16 UTC] PHP   4. require_once() /home/ubuntu/workspace/resources/backend/entities/User.php:2
+[11-Sep-2016 02:37:16 UTC] PHP   5. require_once() /home/ubuntu/workspace/resources/backend/entities/Database.php:3
+[11-Sep-2016 02:37:18 UTC] PHP Parse error:  syntax error, unexpected '$connection' (T_VARIABLE), expecting function (T_FUNCTION) in /home/ubuntu/workspace/resources/backend/entities/SQLSupport.php on line 4
+[11-Sep-2016 02:37:18 UTC] PHP Stack trace:
+[11-Sep-2016 02:37:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/login.php:0
+[11-Sep-2016 02:37:18 UTC] PHP   2. include() /home/ubuntu/workspace/public/login.php:32
+[11-Sep-2016 02:37:18 UTC] PHP   3. require_once() /home/ubuntu/workspace/resources/backend/controllers/userController.php:2
+[11-Sep-2016 02:37:18 UTC] PHP   4. require_once() /home/ubuntu/workspace/resources/backend/entities/User.php:2
+[11-Sep-2016 02:37:18 UTC] PHP   5. require_once() /home/ubuntu/workspace/resources/backend/entities/Database.php:3
+[11-Sep-2016 05:45:00 UTC] PHP Fatal error:  Class 'Database' not found in /home/ubuntu/workspace/resources/backend/entities/SQLSupport.php on line 5
+[11-Sep-2016 05:45:00 UTC] PHP Stack trace:
+[11-Sep-2016 05:45:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[11-Sep-2016 05:45:00 UTC] PHP   2. include() /home/ubuntu/workspace/public/index.php:13
+[11-Sep-2016 05:45:00 UTC] PHP   3. require_once() /home/ubuntu/workspace/resources/templates/side_nav.php:5
+[11-Sep-2016 05:45:00 UTC] PHP   4. require_once() /home/ubuntu/workspace/resources/backend/controllers/categoryController.php:3
+[11-Sep-2016 05:45:00 UTC] PHP   5. require_once() /home/ubuntu/workspace/resources/backend/entities/Database.php:3
+[11-Sep-2016 05:45:00 UTC] PHP   6. Category::getCategoryById() /home/ubuntu/workspace/resources/backend/entities/Category.php:32
+[11-Sep-2016 05:45:00 UTC] PHP   7. Category::executeStatement() /home/ubuntu/workspace/resources/backend/entities/Category.php:26
+[11-Sep-2016 05:45:39 UTC] PHP Fatal error:  Class 'Database' not found in /home/ubuntu/workspace/resources/backend/entities/SQLSupport.php on line 7
+[11-Sep-2016 05:45:39 UTC] PHP Stack trace:
+[11-Sep-2016 05:45:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[11-Sep-2016 05:45:39 UTC] PHP   2. include() /home/ubuntu/workspace/public/index.php:13
+[11-Sep-2016 05:45:39 UTC] PHP   3. require_once() /home/ubuntu/workspace/resources/templates/side_nav.php:5
+[11-Sep-2016 05:45:39 UTC] PHP   4. require_once() /home/ubuntu/workspace/resources/backend/controllers/categoryController.php:3
+[11-Sep-2016 05:45:39 UTC] PHP   5. require_once() /home/ubuntu/workspace/resources/backend/entities/Database.php:3
+[11-Sep-2016 05:45:39 UTC] PHP   6. Category::getCategoryById() /home/ubuntu/workspace/resources/backend/entities/Category.php:32
+[11-Sep-2016 05:45:39 UTC] PHP   7. Category::executeStatement() /home/ubuntu/workspace/resources/backend/entities/Category.php:26
+[11-Sep-2016 05:46:26 UTC] PHP Fatal error:  Class 'Database' not found in /home/ubuntu/workspace/resources/backend/entities/SQLSupport.php on line 5
+[11-Sep-2016 05:46:26 UTC] PHP Stack trace:
+[11-Sep-2016 05:46:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[11-Sep-2016 05:46:26 UTC] PHP   2. include() /home/ubuntu/workspace/public/index.php:13
+[11-Sep-2016 05:46:26 UTC] PHP   3. require_once() /home/ubuntu/workspace/resources/templates/side_nav.php:5
+[11-Sep-2016 05:46:26 UTC] PHP   4. require_once() /home/ubuntu/workspace/resources/backend/controllers/categoryController.php:3
+[11-Sep-2016 05:46:26 UTC] PHP   5. require_once() /home/ubuntu/workspace/resources/backend/entities/Database.php:3
+[11-Sep-2016 05:46:26 UTC] PHP   6. Category::getCategoryById() /home/ubuntu/workspace/resources/backend/entities/Category.php:32
+[11-Sep-2016 05:46:26 UTC] PHP   7. Category::executeStatement() /home/ubuntu/workspace/resources/backend/entities/Category.php:26
+[11-Sep-2016 06:12:51 UTC] PHP Fatal error:  Class 'Database' not found in /home/ubuntu/workspace/resources/backend/entities/SQLSupport.php on line 6
+[11-Sep-2016 06:12:51 UTC] PHP Stack trace:
+[11-Sep-2016 06:12:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[11-Sep-2016 06:12:51 UTC] PHP   2. include() /home/ubuntu/workspace/public/index.php:13
+[11-Sep-2016 06:12:51 UTC] PHP   3. require_once() /home/ubuntu/workspace/resources/templates/side_nav.php:5
+[11-Sep-2016 06:12:51 UTC] PHP   4. require_once() /home/ubuntu/workspace/resources/backend/controllers/categoryController.php:3
+[11-Sep-2016 06:12:51 UTC] PHP   5. require_once() /home/ubuntu/workspace/resources/backend/entities/Database.php:3
+[11-Sep-2016 06:12:51 UTC] PHP   6. Category::getCategoryById() /home/ubuntu/workspace/resources/backend/entities/Category.php:32
+[11-Sep-2016 06:12:51 UTC] PHP   7. Category::executeStatement() /home/ubuntu/workspace/resources/backend/entities/Category.php:26
+[11-Sep-2016 06:13:07 UTC] PHP Fatal error:  Class 'Database' not found in /home/ubuntu/workspace/resources/backend/entities/SQLSupport.php on line 6
+[11-Sep-2016 06:13:07 UTC] PHP Stack trace:
+[11-Sep-2016 06:13:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[11-Sep-2016 06:13:07 UTC] PHP   2. include() /home/ubuntu/workspace/public/index.php:13
+[11-Sep-2016 06:13:07 UTC] PHP   3. require_once() /home/ubuntu/workspace/resources/templates/side_nav.php:5
+[11-Sep-2016 06:13:07 UTC] PHP   4. require_once() /home/ubuntu/workspace/resources/backend/controllers/categoryController.php:3
+[11-Sep-2016 06:13:07 UTC] PHP   5. require_once() /home/ubuntu/workspace/resources/backend/entities/Database.php:3
+[11-Sep-2016 06:13:07 UTC] PHP   6. Category::getCategoryById() /home/ubuntu/workspace/resources/backend/entities/Category.php:32
+[11-Sep-2016 06:13:07 UTC] PHP   7. Category::executeStatement() /home/ubuntu/workspace/resources/backend/entities/Category.php:26
+[11-Sep-2016 13:15:55 UTC] PHP Parse error:  syntax error, unexpected 'inputCheckout' (T_STRING), expecting ',' or ';' in /home/ubuntu/workspace/public/cart.php on line 83

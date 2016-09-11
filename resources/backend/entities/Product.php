@@ -1,7 +1,10 @@
 <?php
     require_once("Database.php");
+    require_once("SQLSupport.php");
     
     class Product implements JsonSerializable{
+        use SQLSupport;
+        
         private $prod_id;
         private $title;
         private $categoryId;
@@ -30,42 +33,22 @@
         }
         
         public static function getProuductById($prod_id){
-            try{
-                $statement=(new Database())->getConnection()->prepare("select * from product where prod_id = :id");
-                $statement->setFetchMode(PDO::FETCH_OBJ);
-                $statement->bindParam(":id", $prod_id);
-                $statement->execute();
-                $result = $statement->fetchAll();
-                return new Product($result[0]->prod_id,$result[0]->title,$result[0]->categoryId,$result[0]->price,$result[0]->long_description,
-                $result[0]->short_description,$result[0]->prod_image,$result[0]->quantity);
-            }
-            catch(PDOException $e){
-                var_dump($e);
-                die("Product not found");
-            }
-        }
-        
-        public static function getProductByCategory($catId){
-                $products=[];
-                try{
-                $statement=(new Database())->getConnection()->prepare("select * from product where categoryId = :id");
-                $statement->setFetchMode(PDO::FETCH_OBJ);
-                $statement->bindParam(":id", $catId);
-                $statement->execute();
-                $results = $statement->fetchAll();
-                foreach($results as $result){
-                        $products[]=new Product($result->prod_id,$result->title,$result->categoryId,$result->price,$result->long_description,
-                        $result->short_description,$result->prod_image,$result->quantity);
-                }
-                return $products;
-            }
-            catch(PDOException $e){
-                var_dump($e);
-                die("Product not found");
-            }
             
+            $result = Product::executeStatement("Product not found","select * from product where prod_id = :id", [":id"=>$prod_id]);
+            return new Product($result[0]->prod_id, $result[0]->title, $result[0]->categoryId, $result[0]->price, $result[0]->long_description,
+            $result[0]->short_description, $result[0]->prod_image, $result[0]->quantity);
         }
-        
+
+        public static function getProductByCategory($catId){
+            
+            $results = Product::executeStatement("Product not found","select * from product where categoryId = :id", [":id"=>$catId]);
+            $products = [];
+            foreach ($results as $result) {
+                $products[] = new Product($result->prod_id, $result->title, $result->categoryId, $result->price, $result->long_description,
+                $result->short_description, $result->prod_image, $result->quantity);
+            }
+            return $products;
+        }
         
         public function getProductId(){
             return $this->prod_id;
@@ -98,6 +81,28 @@
         public function getQuantity(){
             return $this->quantity;
         }
+        
+        public function setQuantity($quantity){
+            $this->quantity=$quantity;
+            try{
+                return (new Database())->getConnection()->exec("update product set quantity={$quantity} where prod_id={$this->prod_id}");
+            }
+            catch(PDOException $e){
+                echo $e;
+                die("Error in updating products");
+            }
+        }
     }
+/*    
+    var_dump(Product::getProuductById(3));
+   
     
+   foreach (Product::getProductByCategory(1) as $product) {
+        echo "<hr/>";
+        var_dump($product);
+        echo "<hr/>";
+    };*/
+    
+     //Product::getProuductById(3)->setQuantity(28);
+
 ?>

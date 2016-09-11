@@ -2,9 +2,10 @@
 require_once("dbConfig.php");
 require_once("Category.php");
 require_once("Product.php");
+require_once("SQLSupport.php");
 
 class Database{
-        
+        use SQLSupport;
         private $connection;
         public function __construct(){
             try{
@@ -26,7 +27,7 @@ class Database{
         
         public function getAllCategories(){
             $categories=[];
-            foreach($this->pdoStatement("select * from category","Categories not found") as $result){
+            foreach(self::executeStatement("Categories not found","select * from category") as $result){
                 $categories[]=new Category($result->catId,$result->catTitle);
             }
             return $categories;
@@ -34,24 +35,19 @@ class Database{
         
         public function getAllProducts(){
             $products=[];
-            foreach($this->pdoStatement("select * from product","Products not found") as $result){
+            foreach(self::executeStatement("Products not found","select * from product") as $result){
                 $products[]=new Product($result->prod_id,$result->title,$result->categoryId,$result->price,$result->long_description,
                 $result->short_description,$result->prod_image,$result->quantity);
             }
             return $products;
         }
-    
-        private function pdoStatement($query, $errorMessage)
-        {
-            try {
-                $pdoStatement = $this->connection->query("{$query}");
-                $pdoStatement->setFetchMode(PDO::FETCH_OBJ);
-                return $pdoStatement;
-            } 
-            catch (Exception $e) {
-                die($errorMessage);
-            }
-            return $pdoStatement;
-        }
 }
+
+    //var_dump((new Database())->getAllCategories());
+   /* 
+    foreach ((new Database())->getAllProducts() as $product) {
+        echo "<hr/>";
+        var_dump($product);
+        echo "<hr/>";
+    }*/
 ?>

@@ -26,11 +26,33 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    
     <script type="text/javascript">
         $(document).ready(function(){
             $(window).on('beforeunload', function() {
                 $(window).scrollTop(0);
             });
+            
+            $('#inputCheckout').one('click', function() {
+                
+                $.post( '/resources/backend/webservices/isLoggedIn.php').success(function(resp){
+                    isLoggedIn = $.parseJSON(resp);
+                    
+                    if(isLoggedIn==true){
+                        $('#inputCheckout').click();
+                        return true;
+                    }
+                    else{
+                        window.location.href='/public/login.php';
+                        return false; 
+                    }
+                });
+                
+                
+            });
+            
+            
         });
+        
     </script>
 </head>
