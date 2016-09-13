@@ -1,10 +1,10 @@
 <?php require_once("../resources/config.php") ?>
 <!DOCTYPE html>
 <html lang="en">
-    <?php include(TEMPLATE_DIR.DS."head.php"); ?>
+    <?php include(TEMPLATE_CUSTOMER.DS."head.php"); ?>
     <body>
         <!-- Navigation -->
-        <?php include(TEMPLATE_DIR.DS."navigation.php"); ?>
+        <?php include(TEMPLATE_CUSTOMER.DS."navigation.php"); ?>
 
         <!-- Page Content -->
         <div class="container">
@@ -22,7 +22,7 @@
                         </div>
         
                         <div class="form-group">
-                          <input type="submit" name="submit" class="btn btn-primary" >
+                          <input type="submit" name="submit" class="btn btn-primary" id="login_submit">
                         </div>
                     </form>
                 </div>  
@@ -39,14 +39,14 @@
                         if($userController->userGroup($currentUserId)=="admin")
                             echo "<script>window.location='admin'</script>";
                         else
-                            echo "<script>window.location='cart.php'</script>";
+                            echo "<script> history.go(-2);</script>";
                     }
                     else
                         echo "<h2 class='text-center bg-warning'>Your e-mail or password was incorrect. Please try again.</h2>";
                 }
         ?>
         <!-- /.container -->
-        <?php include(TEMPLATE_DIR.DS."footer.php"); ?>
+        <?php include(TEMPLATE_CUSTOMER.DS."footer.php"); ?> 
     </body>
 
 </html>

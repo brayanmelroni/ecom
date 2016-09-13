@@ -37,6 +37,11 @@
         public function getUser_Group(){
             return $this->user_group;
         }
+        
+        public function getFirst_Name(){
+            return $this->first_name;
+        }
+        
         public function jsonSerialize() {
             return ["user_id" => $this->user_id,"first_name"=>$this->first_name, "last_name"=>$this->last_name, 
             "address1"=>$this->address1,"address2"=>$this->address2, "city"=>$this->city,"state"=>$this->state,

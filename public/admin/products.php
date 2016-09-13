@@ -1,171 +1,69 @@
+<?php require_once(dirname(__FILE__)."/../../resources/config.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
+    <?php require_once(TEMPLATE_ADMIN.DS."head.php"); ?>
+    <body>
 
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>SB Admin - Bootstrap Admin Template</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/sb-admin.css" rel="stylesheet">
-
-    <!-- Morris Charts CSS -->
-    <link href="css/plugins/morris.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-
-<body>
-
-    <div id="wrapper">
-
-        <!-- Navigation -->
-        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">SB Admin</a>
-            </div>
-            <!-- Top Menu Items -->
-            <ul class="nav navbar-right top-nav">
-              <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                       
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav side-nav">
-                    <li class="active">
-                        <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
-                    </li>
-                    <li>
-                        <a href="charts.html"><i class="fa fa-fw fa-bar-chart-o"></i> View Products</a>
-                    </li>
-                    <li>
-                        <a href="tables.html"><i class="fa fa-fw fa-table"></i> Add Product</a>
-                    </li>
-                    
-                    <li>
-                        <a href="bootstrap-elements.html"><i class="fa fa-fw fa-desktop"></i> Categories</a>
-                    </li>
-                    <li>
-                        <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i>Orders</a>
-                    </li>
-                
-                </ul>
-            </div>
+        <div id="wrapper">
+            <!-- Navigation -->
+            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                <?php require_once(TEMPLATE_ADMIN.DS."top_navigation.php"); ?>
+                <?php require_once(TEMPLATE_ADMIN.DS."side_navigation.php"); ?>
             <!-- /.navbar-collapse -->
-        </nav>
+            </nav>
+            
+            <div id="page-wrapper">
+                <div class="container-fluid">
 
-        <div id="page-wrapper">
+                    <div class="row">
+                        <h1 class="page-header">
+                           All Products
+                        </h1>
+                        <table class="table table-hover">
+                            <thead>
+                        
+                              <tr>
+                                   <th>Product Id</th>
+                                   <th>Title</th>
+                                   <th>Category Id</th>
+                                   <th>Price</th>
+                                   <th>Long Description</th>
+                                   <th>Short Description</th>
+                                   <th>Quantity</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                                <!--http://placehold.it/62x62-->
+                                <?php require_once(dirname(__FILE__)."/../../resources/backend/controllers/productController.php");
+                                        foreach ((new productController())->allProducts() as $product) {
+                                            $product=json_decode($product);
+                                            echo "<tr>
+                                                <td>{$product->prod_id}</td>
+                                                <td>{$product->title}<br>
+                                                    <a href='edit_product.php?p_id={$product->prod_id}'><img src='{$product->prod_image}' alt=''></a>
+                                                </td>
+                                                <td>{$product->categoryId}</td>
+                                                <td>&#163;{$product->price}</td>
+                                                <td>{$product->long_description}</td>
+                                                <td>{$product->short_description}</td>
+                                                <td>{$product->quantity}</td>
+                                                <td><a class='btn btn-danger' href=''><span class='glyphicon glyphicon-remove'></span></a></td>
+                                            </tr>";
+                                        }
+                                ?>
+                          </tbody>
+                        </table>
+    
+                    </div>
 
-            <div class="container-fluid">
-
-             <div class="row">
-
-<h1 class="page-header">
-   All Products
-
-</h1>
-<table class="table table-hover">
-
-
-    <thead>
-
-      <tr>
-           <th>Id</th>
-           <th>Title</th>
-           <th>Category</th>
-           <th>Price</th>
-      </tr>
-    </thead>
-    <tbody>
-
-      <tr>
-            <td>20</td>
-            <td>Nikon 234 <br>
-              <img src="http://placehold.it/62x62" alt="">
-            </td>
-            <td>Category</td>
-            <td>123</td>
-        </tr>
-      
-
-
-  </tbody>
-</table>
-
-
-
-
-
-
-
-
-
-
-
-                
-                 
-
-
-             </div>
+                </div>
+                <!-- /.container-fluid -->
 
             </div>
-            <!-- /.container-fluid -->
+            <!-- /#page-wrapper -->
 
         </div>
-        <!-- /#page-wrapper -->
-
-
-
-
-
-
-
-    </div>
-    <!-- /#wrapper -->
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Morris Charts JavaScript -->
-    <script src="js/plugins/morris/raphael.min.js"></script>
-    <script src="js/plugins/morris/morris.min.js"></script>
-    <script src="js/plugins/morris/morris-data.js"></script>
-
-</body>
+        <!-- /#wrapper -->
+    </body>
 
 </html>

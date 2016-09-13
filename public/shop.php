@@ -1,11 +1,11 @@
 <?php require_once("../resources/config.php") ?>
 <!DOCTYPE html>
 <html lang="en">
-    <?php include(TEMPLATE_DIR.DS."head.php"); ?>
+    <?php include(TEMPLATE_CUSTOMER.DS."head.php"); ?>
     <body>
 
         <!-- Navigation -->
-        <?php include(TEMPLATE_DIR.DS."navigation.php"); ?>
+        <?php include(TEMPLATE_CUSTOMER.DS."navigation.php"); ?>
     
         <!-- Page Content -->
         <div class="container">
@@ -20,12 +20,12 @@
        
             <!-- Page Features -->
             <div class="row text-center">
-                <?php include(TEMPLATE_DIR.DS."thumbnails_index.php"); ?>
+                <?php include(TEMPLATE_CUSTOMER.DS."thumbnails_index.php"); ?>
             </div>
             <!-- /.row -->
         </div>
         <!-- /.container -->
         <!-- Footer -->
-        <?php include(TEMPLATE_DIR.DS."footer.php"); ?>
+        <?php include(TEMPLATE_CUSTOMER.DS."footer.php"); ?>
     </body>
 </html>

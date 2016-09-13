@@ -1,5 +1,5 @@
 <?php
-    require_once(dirname(__FILE__)."/../backend/controllers/productController.php"); 
+    require_once(dirname(__FILE__)."/../../backend/controllers/productController.php"); 
     $product=(new productController())->getProduct($_GET["prod_id"]); 
     $product=json_decode($product);
    

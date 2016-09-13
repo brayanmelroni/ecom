@@ -115,10 +115,19 @@
                 
             });
            
-                    
-                
-                        
-                
+        
+        $_SERVER                    is an array containing information such as headers, paths, and script locations.
+        $_SERVER["REQUEST_URI"]     The URI which was given in order to access this page; for instance, '/index.html'.
+        This is used to check for security. To check whether people use correct URIS. 
+        
+// Great SQL Query from me         
+        select order_id,amount,transaction_id,cust_name,post_address,GROUP_CONCAT(prod_description SEPARATOR ', ') as prod_description
+,orderDate from (SELECT o.order_id, o.amount, o.transaction_id, (select concat(first_name,space(1),last_name) from user where user_id=o.user_id) as 'cust_name',(select concat(address1,',',space(1),address2,',',space(1),city,',',space(1),state,',',space(1),zip) from user where user_id=o.user_id) as 'post_address',(select concat(title,' :',ol.quantity,' item(s)') from product where prod_id = ol.prod_id) as 'prod_description',o.orderDate 
+FROM  `order` o
+INNER JOIN orderLine ol ON o.user_id = ol.user_id
+AND o.orderDate = ol.orderDate) z group by order_id
+
+
         
 */
 ?>

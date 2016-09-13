@@ -18,7 +18,6 @@
                 <li>
                     <a href="admin">Admin</a>
                 </li>
-                
                 <li>
                     <a href="contact.php">Contact</a>
                 </li>
@@ -27,7 +26,7 @@
             
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="login.php">Sign In</a>
+                    <a id="login" href="login.php"></a>
                 </li>
                 <li>
                     <a href="cart.php">Basket</a>

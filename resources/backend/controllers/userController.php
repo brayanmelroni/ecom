@@ -26,11 +26,27 @@
             else
                 return false;
         }
+        
+        public function getNameOfLoggedUser(){
+            $user_id=$_SESSION["user_id"];
+            if ($user_id !=null){
+                return User::getUserById($user_id)->getFirst_Name();
+            }
+            else
+                return null;
+        }
+        
+        public function logOut(){
+            session_destroy();
+        }
     }
     
     //var_dump($status);
     //var_dump((new userController())->userGroup(1));
     //var_dump((new userController())->user(2));
+    //var_dump((new userController())->getNameOfLoggedUser());
+    //var_dump((new userController())->isLoggedIn());
+    
 ?>    
     
     

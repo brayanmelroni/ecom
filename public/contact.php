@@ -3,10 +3,10 @@
 <!DOCTYPE html>
 <html lang="en">
     <!-- Header-->
-    <?php include(TEMPLATE_DIR.DS."head.php"); ?>
+    <?php include(TEMPLATE_CUSTOMER.DS."head.php"); ?>
     <body>
         <!-- Navigation -->
-        <?php include(TEMPLATE_DIR.DS."navigation.php"); ?>
+        <?php include(TEMPLATE_CUSTOMER.DS."navigation.php"); ?>
 
         <!-- Contact Section -->
         <div class="container">
@@ -63,7 +63,7 @@
                 else 
                     echo "<div class='text-center bg-warning'>An error occured</div>";
             }
-            require_once(TEMPLATE_DIR.DS."footer.php"); ?>
+            require_once(TEMPLATE_CUSTOMER.DS."footer.php"); ?>
     </body>
 </html>
 

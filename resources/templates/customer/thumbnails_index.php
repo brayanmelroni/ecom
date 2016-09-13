@@ -1,6 +1,5 @@
 <?php
-
-    require_once(dirname(__FILE__)."/../backend/controllers/productController.php"); 
+    require_once(dirname(__FILE__)."/../../backend/controllers/productController.php"); 
     $products=(new ProductController())->allProducts();
     foreach ($products as $product) {
         $stdProduct=json_decode($product);

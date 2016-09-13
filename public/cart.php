@@ -3,10 +3,10 @@
 <!DOCTYPE html>
 <html lang="en">
      <!-- Header-->
-    <?php include(TEMPLATE_DIR.DS."head.php"); ?>
+    <?php include(TEMPLATE_CUSTOMER.DS."head.php"); ?>
     <body>
         <!-- Navigation -->
-        <?php include(TEMPLATE_DIR.DS."navigation.php"); ?>
+        <?php include(TEMPLATE_CUSTOMER.DS."navigation.php"); ?>
 
         <!-- Page Content -->
         <div class="container">
@@ -116,7 +116,7 @@
              
 
             <!-- Footer -->
-            <?php require_once(TEMPLATE_DIR.DS."footer.php"); ?>
+            <?php require_once(TEMPLATE_CUSTOMER.DS."footer.php"); ?>
 
         </div>
         <!-- /.container -->

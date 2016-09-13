@@ -2,7 +2,7 @@
     <p class="lead">Shop Name</p>
     <div class="list-group">
     <?php
-        require_once(dirname(__FILE__)."/../backend/controllers/categoryController.php"); 
+        require_once(dirname(__FILE__)."/../../backend/controllers/categoryController.php"); 
         
         $jsonForcategories=(new categoryController())->allCategories();
         foreach ($jsonForcategories as $category) {

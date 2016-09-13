@@ -1,5 +1,5 @@
 <?php 
-    require_once(dirname(__FILE__)."/../backend/controllers/categoryController.php"); 
+    require_once(dirname(__FILE__)."/../../backend/controllers/categoryController.php"); 
     $products=(new categoryController())->ProductsUnderCategory($_GET["catId"]);
     
     foreach ($products as $product) {

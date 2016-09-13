@@ -293,3 +293,244 @@
 [11-Sep-2016 06:13:07 UTC] PHP   6. Category::getCategoryById() /home/ubuntu/workspace/resources/backend/entities/Category.php:32
 [11-Sep-2016 06:13:07 UTC] PHP   7. Category::executeStatement() /home/ubuntu/workspace/resources/backend/entities/Category.php:26
 [11-Sep-2016 13:15:55 UTC] PHP Parse error:  syntax error, unexpected 'inputCheckout' (T_STRING), expecting ',' or ';' in /home/ubuntu/workspace/public/cart.php on line 83
+[12-Sep-2016 07:47:59 UTC] PHP Warning:  include(/home/ubuntu/workspace/resources/templates/top_nav.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/resources/templates/navigation.php on line 3
+[12-Sep-2016 07:47:59 UTC] PHP Stack trace:
+[12-Sep-2016 07:47:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[12-Sep-2016 07:47:59 UTC] PHP   2. include() /home/ubuntu/workspace/public/index.php:7
+[12-Sep-2016 07:47:59 UTC] PHP Warning:  include(): Failed opening '/home/ubuntu/workspace/resources/templates/top_nav.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/resources/templates/navigation.php on line 3
+[12-Sep-2016 07:47:59 UTC] PHP Stack trace:
+[12-Sep-2016 07:47:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[12-Sep-2016 07:47:59 UTC] PHP   2. include() /home/ubuntu/workspace/public/index.php:7
+[12-Sep-2016 07:47:59 UTC] PHP Warning:  include(/home/ubuntu/workspace/resources/templates/thumbnails_index.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/public/index.php on line 26
+[12-Sep-2016 07:47:59 UTC] PHP Stack trace:
+[12-Sep-2016 07:47:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[12-Sep-2016 07:47:59 UTC] PHP Warning:  include(): Failed opening '/home/ubuntu/workspace/resources/templates/thumbnails_index.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/public/index.php on line 26
+[12-Sep-2016 07:47:59 UTC] PHP Stack trace:
+[12-Sep-2016 07:47:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[12-Sep-2016 07:48:05 UTC] PHP Warning:  include(/home/ubuntu/workspace/resources/templates/top_nav.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/resources/templates/navigation.php on line 3
+[12-Sep-2016 07:48:05 UTC] PHP Stack trace:
+[12-Sep-2016 07:48:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/category.php:0
+[12-Sep-2016 07:48:05 UTC] PHP   2. include() /home/ubuntu/workspace/public/category.php:8
+[12-Sep-2016 07:48:05 UTC] PHP Warning:  include(): Failed opening '/home/ubuntu/workspace/resources/templates/top_nav.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/resources/templates/navigation.php on line 3
+[12-Sep-2016 07:48:05 UTC] PHP Stack trace:
+[12-Sep-2016 07:48:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/category.php:0
+[12-Sep-2016 07:48:05 UTC] PHP   2. include() /home/ubuntu/workspace/public/category.php:8
+[12-Sep-2016 07:48:18 UTC] PHP Warning:  include(/home/ubuntu/workspace/resources/templates/top_nav.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/resources/templates/navigation.php on line 3
+[12-Sep-2016 07:48:18 UTC] PHP Stack trace:
+[12-Sep-2016 07:48:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[12-Sep-2016 07:48:18 UTC] PHP   2. include() /home/ubuntu/workspace/public/index.php:7
+[12-Sep-2016 07:48:18 UTC] PHP Warning:  include(): Failed opening '/home/ubuntu/workspace/resources/templates/top_nav.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/resources/templates/navigation.php on line 3
+[12-Sep-2016 07:48:18 UTC] PHP Stack trace:
+[12-Sep-2016 07:48:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[12-Sep-2016 07:48:18 UTC] PHP   2. include() /home/ubuntu/workspace/public/index.php:7
+[12-Sep-2016 07:48:18 UTC] PHP Warning:  include(/home/ubuntu/workspace/resources/templates/thumbnails_index.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/public/index.php on line 26
+[12-Sep-2016 07:48:18 UTC] PHP Stack trace:
+[12-Sep-2016 07:48:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[12-Sep-2016 07:48:18 UTC] PHP Warning:  include(): Failed opening '/home/ubuntu/workspace/resources/templates/thumbnails_index.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/public/index.php on line 26
+[12-Sep-2016 07:48:18 UTC] PHP Stack trace:
+[12-Sep-2016 07:48:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[12-Sep-2016 07:53:03 UTC] PHP Warning:  require_once(/home/ubuntu/workspace/resources/templates/../../backend/controllers/productController.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/resources/templates/thumbnails_index.php on line 2
+[12-Sep-2016 07:53:03 UTC] PHP Stack trace:
+[12-Sep-2016 07:53:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[12-Sep-2016 07:53:03 UTC] PHP   2. include() /home/ubuntu/workspace/public/index.php:26
+[12-Sep-2016 07:53:03 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/ubuntu/workspace/resources/templates/../../backend/controllers/productController.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/resources/templates/thumbnails_index.php on line 2
+[12-Sep-2016 07:53:03 UTC] PHP Stack trace:
+[12-Sep-2016 07:53:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[12-Sep-2016 07:53:03 UTC] PHP   2. include() /home/ubuntu/workspace/public/index.php:26
+[12-Sep-2016 08:07:28 UTC] PHP Warning:  include(/home/ubuntu/workspace/resources/templates/top_nav.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/resources/templates/navigation.php on line 3
+[12-Sep-2016 08:07:28 UTC] PHP Stack trace:
+[12-Sep-2016 08:07:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[12-Sep-2016 08:07:28 UTC] PHP   2. include() /home/ubuntu/workspace/public/index.php:7
+[12-Sep-2016 08:07:28 UTC] PHP Warning:  include(): Failed opening '/home/ubuntu/workspace/resources/templates/top_nav.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/resources/templates/navigation.php on line 3
+[12-Sep-2016 08:07:28 UTC] PHP Stack trace:
+[12-Sep-2016 08:07:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[12-Sep-2016 08:07:28 UTC] PHP   2. include() /home/ubuntu/workspace/public/index.php:7
+[12-Sep-2016 08:07:28 UTC] PHP Warning:  include(/home/ubuntu/workspace/resources/templates/thumbnails_index.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/public/index.php on line 26
+[12-Sep-2016 08:07:28 UTC] PHP Stack trace:
+[12-Sep-2016 08:07:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[12-Sep-2016 08:07:28 UTC] PHP Warning:  include(): Failed opening '/home/ubuntu/workspace/resources/templates/thumbnails_index.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/public/index.php on line 26
+[12-Sep-2016 08:07:28 UTC] PHP Stack trace:
+[12-Sep-2016 08:07:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[12-Sep-2016 08:23:30 UTC] PHP Warning:  include(/home/ubuntu/workspace/resources/templates/head.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/public/item.php on line 4
+[12-Sep-2016 08:23:30 UTC] PHP Stack trace:
+[12-Sep-2016 08:23:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/item.php:0
+[12-Sep-2016 08:23:30 UTC] PHP Warning:  include(): Failed opening '/home/ubuntu/workspace/resources/templates/head.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/public/item.php on line 4
+[12-Sep-2016 08:23:30 UTC] PHP Stack trace:
+[12-Sep-2016 08:23:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/item.php:0
+[12-Sep-2016 08:23:30 UTC] PHP Warning:  include(/home/ubuntu/workspace/resources/templates/navigation.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/public/item.php on line 6
+[12-Sep-2016 08:23:30 UTC] PHP Stack trace:
+[12-Sep-2016 08:23:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/item.php:0
+[12-Sep-2016 08:23:30 UTC] PHP Warning:  include(): Failed opening '/home/ubuntu/workspace/resources/templates/navigation.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/public/item.php on line 6
+[12-Sep-2016 08:23:30 UTC] PHP Stack trace:
+[12-Sep-2016 08:23:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/item.php:0
+[12-Sep-2016 08:23:30 UTC] PHP Warning:  include(/home/ubuntu/workspace/resources/templates/side_nav.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/public/item.php on line 12
+[12-Sep-2016 08:23:30 UTC] PHP Stack trace:
+[12-Sep-2016 08:23:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/item.php:0
+[12-Sep-2016 08:23:30 UTC] PHP Warning:  include(): Failed opening '/home/ubuntu/workspace/resources/templates/side_nav.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/public/item.php on line 12
+[12-Sep-2016 08:23:30 UTC] PHP Stack trace:
+[12-Sep-2016 08:23:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/item.php:0
+[12-Sep-2016 08:23:30 UTC] PHP Warning:  include(/home/ubuntu/workspace/resources/templates/singleproduct.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/public/item.php on line 16
+[12-Sep-2016 08:23:30 UTC] PHP Stack trace:
+[12-Sep-2016 08:23:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/item.php:0
+[12-Sep-2016 08:23:30 UTC] PHP Warning:  include(): Failed opening '/home/ubuntu/workspace/resources/templates/singleproduct.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/public/item.php on line 16
+[12-Sep-2016 08:23:30 UTC] PHP Stack trace:
+[12-Sep-2016 08:23:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/item.php:0
+[12-Sep-2016 08:23:30 UTC] PHP Warning:  include(/home/ubuntu/workspace/resources/templates/footer.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/public/item.php on line 22
+[12-Sep-2016 08:23:30 UTC] PHP Stack trace:
+[12-Sep-2016 08:23:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/item.php:0
+[12-Sep-2016 08:23:30 UTC] PHP Warning:  include(): Failed opening '/home/ubuntu/workspace/resources/templates/footer.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/public/item.php on line 22
+[12-Sep-2016 08:23:30 UTC] PHP Stack trace:
+[12-Sep-2016 08:23:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/item.php:0
+[12-Sep-2016 08:25:24 UTC] PHP Warning:  include(/home/ubuntu/workspace/resources/templates/head.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/public/login.php on line 4
+[12-Sep-2016 08:25:24 UTC] PHP Stack trace:
+[12-Sep-2016 08:25:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/login.php:0
+[12-Sep-2016 08:25:24 UTC] PHP Warning:  include(): Failed opening '/home/ubuntu/workspace/resources/templates/head.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/public/login.php on line 4
+[12-Sep-2016 08:25:24 UTC] PHP Stack trace:
+[12-Sep-2016 08:25:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/login.php:0
+[12-Sep-2016 08:25:24 UTC] PHP Warning:  include(/home/ubuntu/workspace/resources/templates/navigation.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/public/login.php on line 7
+[12-Sep-2016 08:25:24 UTC] PHP Stack trace:
+[12-Sep-2016 08:25:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/login.php:0
+[12-Sep-2016 08:25:24 UTC] PHP Warning:  include(): Failed opening '/home/ubuntu/workspace/resources/templates/navigation.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/public/login.php on line 7
+[12-Sep-2016 08:25:24 UTC] PHP Stack trace:
+[12-Sep-2016 08:25:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/login.php:0
+[12-Sep-2016 08:25:24 UTC] PHP Warning:  include(/home/ubuntu/workspace/resources/templates/footer.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/public/login.php on line 49
+[12-Sep-2016 08:25:24 UTC] PHP Stack trace:
+[12-Sep-2016 08:25:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/login.php:0
+[12-Sep-2016 08:25:24 UTC] PHP Warning:  include(): Failed opening '/home/ubuntu/workspace/resources/templates/footer.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/public/login.php on line 49
+[12-Sep-2016 08:25:24 UTC] PHP Stack trace:
+[12-Sep-2016 08:25:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/login.php:0
+[12-Sep-2016 08:26:20 UTC] PHP Warning:  include(/home/ubuntu/workspace/resources/templates/customerfooter.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/public/login.php on line 49
+[12-Sep-2016 08:26:20 UTC] PHP Stack trace:
+[12-Sep-2016 08:26:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/login.php:0
+[12-Sep-2016 08:26:20 UTC] PHP Warning:  include(): Failed opening '/home/ubuntu/workspace/resources/templates/customerfooter.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/public/login.php on line 49
+[12-Sep-2016 08:26:20 UTC] PHP Stack trace:
+[12-Sep-2016 08:26:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/login.php:0
+[12-Sep-2016 08:27:18 UTC] PHP Warning:  include(/home/ubuntu/workspace/resources/templates/head.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/public/cart.php on line 6
+[12-Sep-2016 08:27:18 UTC] PHP Stack trace:
+[12-Sep-2016 08:27:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/cart.php:0
+[12-Sep-2016 08:27:18 UTC] PHP Warning:  include(): Failed opening '/home/ubuntu/workspace/resources/templates/head.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/public/cart.php on line 6
+[12-Sep-2016 08:27:18 UTC] PHP Stack trace:
+[12-Sep-2016 08:27:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/cart.php:0
+[12-Sep-2016 08:27:18 UTC] PHP Warning:  include(/home/ubuntu/workspace/resources/templates/navigation.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/public/cart.php on line 9
+[12-Sep-2016 08:27:18 UTC] PHP Stack trace:
+[12-Sep-2016 08:27:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/cart.php:0
+[12-Sep-2016 08:27:18 UTC] PHP Warning:  include(): Failed opening '/home/ubuntu/workspace/resources/templates/navigation.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/public/cart.php on line 9
+[12-Sep-2016 08:27:18 UTC] PHP Stack trace:
+[12-Sep-2016 08:27:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/cart.php:0
+[12-Sep-2016 08:27:18 UTC] PHP Warning:  require_once(/home/ubuntu/workspace/resources/templates/footer.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/public/cart.php on line 119
+[12-Sep-2016 08:27:18 UTC] PHP Stack trace:
+[12-Sep-2016 08:27:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/cart.php:0
+[12-Sep-2016 08:27:18 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/ubuntu/workspace/resources/templates/footer.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/public/cart.php on line 119
+[12-Sep-2016 08:27:18 UTC] PHP Stack trace:
+[12-Sep-2016 08:27:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/cart.php:0
+[12-Sep-2016 08:29:45 UTC] PHP Warning:  include(/home/ubuntu/workspace/resources/templates/head.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/public/cart.php on line 6
+[12-Sep-2016 08:29:45 UTC] PHP Stack trace:
+[12-Sep-2016 08:29:45 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/cart.php:0
+[12-Sep-2016 08:29:45 UTC] PHP Warning:  include(): Failed opening '/home/ubuntu/workspace/resources/templates/head.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/public/cart.php on line 6
+[12-Sep-2016 08:29:45 UTC] PHP Stack trace:
+[12-Sep-2016 08:29:45 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/cart.php:0
+[12-Sep-2016 08:29:45 UTC] PHP Warning:  include(/home/ubuntu/workspace/resources/templates/navigation.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/public/cart.php on line 9
+[12-Sep-2016 08:29:45 UTC] PHP Stack trace:
+[12-Sep-2016 08:29:45 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/cart.php:0
+[12-Sep-2016 08:29:45 UTC] PHP Warning:  include(): Failed opening '/home/ubuntu/workspace/resources/templates/navigation.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/public/cart.php on line 9
+[12-Sep-2016 08:29:45 UTC] PHP Stack trace:
+[12-Sep-2016 08:29:45 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/cart.php:0
+[12-Sep-2016 08:29:45 UTC] PHP Warning:  require_once(/home/ubuntu/workspace/resources/templates/footer.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/public/cart.php on line 119
+[12-Sep-2016 08:29:45 UTC] PHP Stack trace:
+[12-Sep-2016 08:29:45 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/cart.php:0
+[12-Sep-2016 08:29:45 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/ubuntu/workspace/resources/templates/footer.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/public/cart.php on line 119
+[12-Sep-2016 08:29:45 UTC] PHP Stack trace:
+[12-Sep-2016 08:29:45 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/cart.php:0
+[12-Sep-2016 08:29:53 UTC] PHP Warning:  include(/home/ubuntu/workspace/resources/templates/head.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/public/cart.php on line 6
+[12-Sep-2016 08:29:53 UTC] PHP Stack trace:
+[12-Sep-2016 08:29:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/cart.php:0
+[12-Sep-2016 08:29:53 UTC] PHP Warning:  include(): Failed opening '/home/ubuntu/workspace/resources/templates/head.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/public/cart.php on line 6
+[12-Sep-2016 08:29:53 UTC] PHP Stack trace:
+[12-Sep-2016 08:29:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/cart.php:0
+[12-Sep-2016 08:29:53 UTC] PHP Warning:  include(/home/ubuntu/workspace/resources/templates/navigation.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/public/cart.php on line 9
+[12-Sep-2016 08:29:53 UTC] PHP Stack trace:
+[12-Sep-2016 08:29:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/cart.php:0
+[12-Sep-2016 08:29:53 UTC] PHP Warning:  include(): Failed opening '/home/ubuntu/workspace/resources/templates/navigation.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/public/cart.php on line 9
+[12-Sep-2016 08:29:53 UTC] PHP Stack trace:
+[12-Sep-2016 08:29:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/cart.php:0
+[12-Sep-2016 08:29:54 UTC] PHP Warning:  require_once(/home/ubuntu/workspace/resources/templates/footer.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/public/cart.php on line 119
+[12-Sep-2016 08:29:54 UTC] PHP Stack trace:
+[12-Sep-2016 08:29:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/cart.php:0
+[12-Sep-2016 08:29:54 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/ubuntu/workspace/resources/templates/footer.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/public/cart.php on line 119
+[12-Sep-2016 08:29:54 UTC] PHP Stack trace:
+[12-Sep-2016 08:29:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/cart.php:0
+[12-Sep-2016 08:30:47 UTC] PHP Warning:  include(/home/ubuntu/workspace/resources/templates/head.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/public/cart.php on line 6
+[12-Sep-2016 08:30:47 UTC] PHP Stack trace:
+[12-Sep-2016 08:30:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/cart.php:0
+[12-Sep-2016 08:30:47 UTC] PHP Warning:  include(): Failed opening '/home/ubuntu/workspace/resources/templates/head.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/public/cart.php on line 6
+[12-Sep-2016 08:30:47 UTC] PHP Stack trace:
+[12-Sep-2016 08:30:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/cart.php:0
+[12-Sep-2016 08:30:47 UTC] PHP Warning:  include(/home/ubuntu/workspace/resources/templates/navigation.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/public/cart.php on line 9
+[12-Sep-2016 08:30:47 UTC] PHP Stack trace:
+[12-Sep-2016 08:30:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/cart.php:0
+[12-Sep-2016 08:30:47 UTC] PHP Warning:  include(): Failed opening '/home/ubuntu/workspace/resources/templates/navigation.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/public/cart.php on line 9
+[12-Sep-2016 08:30:47 UTC] PHP Stack trace:
+[12-Sep-2016 08:30:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/cart.php:0
+[12-Sep-2016 08:30:48 UTC] PHP Warning:  require_once(/home/ubuntu/workspace/resources/templates/footer.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/public/cart.php on line 119
+[12-Sep-2016 08:30:48 UTC] PHP Stack trace:
+[12-Sep-2016 08:30:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/cart.php:0
+[12-Sep-2016 08:30:48 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/ubuntu/workspace/resources/templates/footer.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/public/cart.php on line 119
+[12-Sep-2016 08:30:48 UTC] PHP Stack trace:
+[12-Sep-2016 08:30:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/cart.php:0
+[12-Sep-2016 08:34:58 UTC] PHP Warning:  include(/home/ubuntu/workspace/resources/templates/head.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/public/cart.php on line 6
+[12-Sep-2016 08:34:58 UTC] PHP Stack trace:
+[12-Sep-2016 08:34:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/cart.php:0
+[12-Sep-2016 08:34:58 UTC] PHP Warning:  include(): Failed opening '/home/ubuntu/workspace/resources/templates/head.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/public/cart.php on line 6
+[12-Sep-2016 08:34:58 UTC] PHP Stack trace:
+[12-Sep-2016 08:34:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/cart.php:0
+[12-Sep-2016 08:34:58 UTC] PHP Warning:  include(/home/ubuntu/workspace/resources/templates/navigation.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/public/cart.php on line 9
+[12-Sep-2016 08:34:58 UTC] PHP Stack trace:
+[12-Sep-2016 08:34:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/cart.php:0
+[12-Sep-2016 08:34:58 UTC] PHP Warning:  include(): Failed opening '/home/ubuntu/workspace/resources/templates/navigation.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/public/cart.php on line 9
+[12-Sep-2016 08:34:58 UTC] PHP Stack trace:
+[12-Sep-2016 08:34:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/cart.php:0
+[12-Sep-2016 08:34:59 UTC] PHP Warning:  require_once(/home/ubuntu/workspace/resources/templates/footer.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/public/cart.php on line 119
+[12-Sep-2016 08:34:59 UTC] PHP Stack trace:
+[12-Sep-2016 08:34:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/cart.php:0
+[12-Sep-2016 08:34:59 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/ubuntu/workspace/resources/templates/footer.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/public/cart.php on line 119
+[12-Sep-2016 08:34:59 UTC] PHP Stack trace:
+[12-Sep-2016 08:34:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/cart.php:0
+[13-Sep-2016 12:06:58 UTC] PHP Fatal error:  Cannot redeclare class CartController in /home/ubuntu/workspace/resources/backend/controllers/cartController.php on line 5
+[13-Sep-2016 12:06:58 UTC] PHP Stack trace:
+[13-Sep-2016 12:06:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/thanks.php:0
+[13-Sep-2016 12:50:16 UTC] PHP Warning:  Illegal string offset 'title' in /home/ubuntu/workspace/public/thanks.php on line 24
+[13-Sep-2016 12:50:16 UTC] PHP Stack trace:
+[13-Sep-2016 12:50:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/thanks.php:0
+[13-Sep-2016 12:50:16 UTC] PHP Warning:  Illegal string offset 'price' in /home/ubuntu/workspace/public/thanks.php on line 26
+[13-Sep-2016 12:50:16 UTC] PHP Stack trace:
+[13-Sep-2016 12:50:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/thanks.php:0
+[13-Sep-2016 12:50:16 UTC] PHP Warning:  Illegal string offset 'title' in /home/ubuntu/workspace/public/thanks.php on line 24
+[13-Sep-2016 12:50:16 UTC] PHP Stack trace:
+[13-Sep-2016 12:50:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/thanks.php:0
+[13-Sep-2016 12:50:16 UTC] PHP Warning:  Illegal string offset 'price' in /home/ubuntu/workspace/public/thanks.php on line 26
+[13-Sep-2016 12:50:16 UTC] PHP Stack trace:
+[13-Sep-2016 12:50:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/thanks.php:0
+[13-Sep-2016 12:50:16 UTC] PHP Warning:  Illegal string offset 'title' in /home/ubuntu/workspace/public/thanks.php on line 24
+[13-Sep-2016 12:50:16 UTC] PHP Stack trace:
+[13-Sep-2016 12:50:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/thanks.php:0
+[13-Sep-2016 12:50:16 UTC] PHP Warning:  Illegal string offset 'price' in /home/ubuntu/workspace/public/thanks.php on line 26
+[13-Sep-2016 12:50:16 UTC] PHP Stack trace:
+[13-Sep-2016 12:50:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/thanks.php:0
+[13-Sep-2016 12:51:17 UTC] PHP Warning:  Illegal string offset 'title' in /home/ubuntu/workspace/public/thanks.php on line 24
+[13-Sep-2016 12:51:17 UTC] PHP Stack trace:
+[13-Sep-2016 12:51:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/thanks.php:0
+[13-Sep-2016 12:51:17 UTC] PHP Warning:  Illegal string offset 'price' in /home/ubuntu/workspace/public/thanks.php on line 26
+[13-Sep-2016 12:51:17 UTC] PHP Stack trace:
+[13-Sep-2016 12:51:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/thanks.php:0
+[13-Sep-2016 12:51:17 UTC] PHP Warning:  Illegal string offset 'title' in /home/ubuntu/workspace/public/thanks.php on line 24
+[13-Sep-2016 12:51:17 UTC] PHP Stack trace:
+[13-Sep-2016 12:51:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/thanks.php:0
+[13-Sep-2016 12:51:17 UTC] PHP Warning:  Illegal string offset 'price' in /home/ubuntu/workspace/public/thanks.php on line 26
+[13-Sep-2016 12:51:17 UTC] PHP Stack trace:
+[13-Sep-2016 12:51:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/thanks.php:0
+[13-Sep-2016 12:51:17 UTC] PHP Warning:  Illegal string offset 'title' in /home/ubuntu/workspace/public/thanks.php on line 24
+[13-Sep-2016 12:51:17 UTC] PHP Stack trace:
+[13-Sep-2016 12:51:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/thanks.php:0
+[13-Sep-2016 12:51:17 UTC] PHP Warning:  Illegal string offset 'price' in /home/ubuntu/workspace/public/thanks.php on line 26
+[13-Sep-2016 12:51:17 UTC] PHP Stack trace:
+[13-Sep-2016 12:51:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/thanks.php:0

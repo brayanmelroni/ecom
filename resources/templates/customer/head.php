@@ -34,7 +34,6 @@
             });
             
             $('#inputCheckout').one('click', function() {
-                
                 $.post( '/resources/backend/webservices/isLoggedIn.php').success(function(resp){
                     isLoggedIn = $.parseJSON(resp);
                     
@@ -47,12 +46,33 @@
                         return false; 
                     }
                 });
-                
-                
+            });
+        
+            
+            
+            $.post( '/resources/backend/webservices/isLoggedIn.php').success(function(resp){
+                    isLoggedIn = $.parseJSON(resp);
+                    if(isLoggedIn==true){
+                        $("#login").html("Logout");
+                        return true;
+                    }
+                    if(isLoggedIn==false){
+                        $("#login").html("Sign In");
+                        return true;
+                    }
             });
             
+            $('#login').on('click', function() {
+                if($('#login').html()=="Logout"){ 
+                    $.post( '/resources/backend/webservices/logout.php').success(function(resp){
+                        window.location.href='/public/index.php';
+                        return false;
+                    });
+                }
+            });
             
         });
+       
         
     </script>
 </head>
