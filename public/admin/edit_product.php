@@ -18,7 +18,7 @@
                     <div class="col-md-12">
                         <div class="row">
                             <h1 class="page-header">
-                               Add Product
+                               Edit Product
                             
                             </h1>
                         </div>

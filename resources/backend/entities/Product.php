@@ -92,8 +92,27 @@
                 die("Error in updating products");
             }
         }
+        
+        public static function deleteProduct($prod_id){
+            try{
+                $results = Product::executeStatement("Orders cannot be retreived","select * from orderLine where prod_id = :id", [":id"=>$prod_id]);
+                if($results==null){
+                    $connection=(new Database())->getConnection();
+                    return $connection->exec("delete from product where prod_id='$prod_id'");
+                }
+                else{
+                    return 0; 
+                }
+            }
+            catch(PDOException $e){
+                echo $e;
+                die("Product not deleted.");
+            }
+        }
     }
-/*    
+    
+/*   
+    
     var_dump(Product::getProuductById(3));
    
     

@@ -4,3 +4,4 @@
     $_SESSION["message"]="Order number ".$_GET['del_order']." was successfully deleted";
     echo "<script>window.location='"."orders.php"."'</script>";
 ?>
+

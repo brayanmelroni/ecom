@@ -19,6 +19,14 @@
                         <h1 class="page-header">
                            All Products
                         </h1>
+                        <div class="message">
+                            <?php
+                                if($_SESSION["message"]!=null){
+                                    echo "<div class='alert alert-info'>".$_SESSION["message"]."</div>"; 
+                                    $_SESSION["message"]=null;
+                                }
+                            ?>
+                        </div>
                         <table class="table table-hover">
                             <thead>
                         
@@ -41,13 +49,13 @@
                                                 <td>{$product->prod_id}</td>
                                                 <td>{$product->title}<br>
                                                     <a href='edit_product.php?p_id={$product->prod_id}'><img src='{$product->prod_image}' alt=''></a>
-                                                </td>
+                                                </td>  
                                                 <td>{$product->categoryId}</td>
                                                 <td>&#163;{$product->price}</td>
                                                 <td>{$product->long_description}</td>
                                                 <td>{$product->short_description}</td>
                                                 <td>{$product->quantity}</td>
-                                                <td><a class='btn btn-danger' href=''><span class='glyphicon glyphicon-remove'></span></a></td>
+                                                <td><a class='btn btn-danger' href='delete_product.php?del_product={$product->prod_id}'><span class='glyphicon glyphicon-remove'></span></a></td>
                                             </tr>";
                                         }
                                 ?>

@@ -39,7 +39,7 @@ class orderController{
     var_dump($order); echo "<hr/>";
 }*/
 
-(new orderController())->deleteOrder(180);
+//(new orderController())->deleteOrder(180);
 
 
 

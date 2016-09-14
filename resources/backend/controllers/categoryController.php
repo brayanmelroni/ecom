@@ -26,6 +26,20 @@
             }
             return $jsonForProducts;
         }
+        
+        public function saveCategory($catTitle){
+            if($catTitle!=null){
+                $category=new Category(null,$catTitle);
+                return $category->save();
+            }
+            else{
+                return null;
+            }
+        }
+        
+        public function deleteCategory($catId){
+            return Category::deleteCategoryWhenIdGiven($catId);
+        }
     }
 ?>
 

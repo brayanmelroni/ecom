@@ -30,7 +30,12 @@ class productController{
     public function findAndSetQuantity($id,$newQuantity){
         return Product::getProuductById($id)->setQuantity($newQuantity);
     }
+    
+    public function deleteProductById($prod_id){
+        return Product::deleteProduct($prod_id);
+    }
 }
+    //var_dump((new ProductController())->deleteProductById(4));
     
     //(new ProductController())->findAndSetQuantity(2,12); 
     
