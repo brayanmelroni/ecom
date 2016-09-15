@@ -41,6 +41,7 @@
             return Category::deleteCategoryWhenIdGiven($catId);
         }
     }
+    
 ?>
 
 

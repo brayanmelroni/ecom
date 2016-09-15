@@ -48,9 +48,11 @@
                                     if($quantity!=null){
                                         $product=json_decode($product);
                                         $title=$product->title;
+                                        $prod_image=$product->prod_image;
                                         $prod_id=$product->prod_id;
                                         $price=$product->price;
-                                        echo " <tr><td>{$title}</td>";
+                                        
+                                        echo " <tr><td>{$title}<br/><img width='100px'src='{$prod_image}'></img></td>";
                                         echo "<td>&#163;{$price}</td>";
                                         echo "<td>{$quantity}</td>";
                                         

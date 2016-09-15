@@ -21,26 +21,37 @@
                        Add Product
                     
                     </h1>
+                    <?php
+                        if($_SESSION["message"]){
+                        echo "<div class='alert alert-info'>".$_SESSION["message"]."</div>"; 
+                        $_SESSION["message"]=null;
+                        }
+                    ?>
                     </div>
                                
                     <form action="" method="post" enctype="multipart/form-data">
                         <div class="col-md-8">
         
                             <div class="form-group">
-                                <label for="product-title">Product Title </label>
+                                <label for="product_title">Product Title </label>
                                 <input type="text" name="product_title" class="form-control">
                             </div>
         
                             <div class="form-group">
-                                   <label for="product-title">Product Description</label>
-                              <textarea name="product_description" id="" cols="30" rows="10" class="form-control"></textarea>
+                                   <label for="short_description">Product Short Description</label>
+                              <textarea name="short_description" id="" cols="30" rows="4" class="form-control"></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                   <label for="long_description">Product Long Description</label>
+                              <textarea name="long_description" id="" cols="30" rows="10" class="form-control"></textarea>
                             </div>
                             
                             <div class="form-group row">
                         
                                   <div class="col-xs-3">
                                     <label for="product-price">Product Price</label>
-                                    <input type="number" name="product_price" class="form-control" size="60">
+                                    <input type="text" name="product_price" class="form-control" size="60">
                                   </div>
                             </div>
         
@@ -61,26 +72,21 @@
                                 <label for="product-title">Product Category</label>
                                 <hr>
                                 <select name="product_category" id="" class="form-control">
-                                    <option value="">Select Category</option>
-                                   
+                                    <?php require_once(dirname(__FILE__)."/../../resources/backend/controllers/categoryController.php");
+                                        $catController=new categoryController();
+                                        foreach ($catController->allCategories() as $category) {
+                                            $category=json_decode($category);
+                                            echo "<option name='product_category' value='{$category->catId}'>{$category->catTitle}</option>";
+                                        }
+                                    ?>
                                 </select>
                             </div>
             
-                            <!-- Product Brands-->
-                        
-                            <div class="form-group">
-                              <label for="product-title">Product Brand</label>
-                                 <select name="product_brand" id="" class="form-control">
-                                    <option value="">Select Brand</option>
-                                 </select>
-                            </div>
-            
-            
                             <!-- Product Tags -->
                             <div class="form-group">
-                                <label for="product-title">Product Keywords</label>
+                                <label for="product_quantity">Product Quantity</label>
                                 <hr>
-                                <input type="text" name="product_tags" class="form-control">
+                                <input type="number" name="product_quantity" class="form-control">
                             </div>
                             
                             <!-- Product Image -->
@@ -91,6 +97,26 @@
         
                         </aside><!--SIDEBAR-->
                     </form>
+                    <?php require_once(dirname(__FILE__)."/../../resources/backend/controllers/productController.php");
+                        
+                        if($_POST['product_title']!=null && $_POST["product_category"]!=null && $_POST["product_price"]!=null
+                        && $_POST["long_description"]!=null && $_POST["short_description"]!=null && $_POST["product_quantity"]!=null){
+                            
+                            move_uploaded_file($_FILES["file"]["tmp_name"],dirname(__FILE__)."/../../resources/uploads/".$_FILES["file"]["name"]);
+                            $prod_image="/resources/uploads/".$_FILES["file"]["name"];
+                            
+                            $value=(new productController())->saveProduct($_POST['product_title'],$_POST["product_category"],
+                            $_POST["product_price"],$_POST["long_description"],$_POST["short_description"],$prod_image,
+                            $_POST["product_quantity"]);
+                            
+                            if($value>0)
+                                $_SESSION["message"]="New Product was saved";
+                            if($value==null)
+                                $_SESSION["message"]="Error: Product was not saved";
+                            echo "<script>window.location='"."add_product.php"."'</script>"; 
+                        }
+                       
+                    ?>
                 </div>
                 <!-- /.container-fluid -->
             </div>

@@ -27,6 +27,7 @@
             return new Category($result[0]->catId,$result[0]->catTitle);
         }
         
+        
         public function save(){
             try{
                 (new Database())->getConnection()->exec("insert into category (catTitle) values('{$this->catTitle}')");

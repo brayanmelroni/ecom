@@ -2,6 +2,7 @@
 require_once("dbConfig.php");
 require_once("Category.php");
 require_once("Product.php");
+require_once("User.php");
 require_once("SQLSupport.php");
 
 class Database{
@@ -41,6 +42,15 @@ class Database{
             }
             return $products;
         }
+        
+        public function getAllUsers(){
+            $users=[];
+            foreach(self::executeStatement("Users not found","select * from user") as $result){
+                $products[]=new User($result->user_id,$result->first_name,$result->last_name,$result->address1,$result->address2,
+                $result->city,$result->state,$result->zip,$result->username,$result->password,$result->user_group,$result->email);
+            }
+            return $products;
+        }
 }
 
     //var_dump((new Database())->getAllCategories());
@@ -50,4 +60,11 @@ class Database{
         var_dump($product);
         echo "<hr/>";
     }*/
+    /*foreach ((new Database())->getAllUsers() as $user) {
+        echo "<hr/>";
+        var_dump($user);
+        echo "<hr/>";
+    }*/
+
+    
 ?>

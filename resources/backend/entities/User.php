@@ -66,9 +66,39 @@
                 else 
                     return null;
         }
-    }
+        
+        
+        public static function deleteUserWhenIdGiven($user_id){
+            $numdeleted=0;
+            try{
+                $connection=(new Database())->getConnection();
+                $numdeleted=$connection->exec("delete from user where user_id='$user_id'"); 
+            }
+            catch(PDOException $e){
+                echo $e;
+                die("User not deleted.");
+            }
+            return $numdeleted;
+        }
+        
+        public function save(){
+            try{
+                return (new Database())->getConnection()->exec("insert into user (first_name,last_name,address1,address2,city,state,zip
+                ,username,password,user_group,email) values('{$this->first_name}','{$this->last_name}','{$this->address1}','{$this->address2}'
+                ,'{$this->city}','{$this->state}','{$this->zip}','{$this->username}','{$this->password}','{$this->user_group}','{$this->email}')");
+            }
+            catch(PDOException $e){
+                echo $e;
+                die("User not saved.");
+            }
+        }
+    
+}
     
     //var_dump(User::getUser("rico","123456")->jsonSerialize());
     //var_dump(User::getUserById(2));
+    //var_dump(User::deleteUserWhenIdGiven(4));
+    //$user=new User(null,"first_name","last_name","address1","address2","city","state","zip","username","password","customer","email");
+    //var_dump($user->save());
     
 ?>

@@ -15,6 +15,12 @@
                 <div class="container-fluid">
                     <div class="col-lg-12">
                         <h1 class="page-header">Users</h1>
+                        <?php
+                                if($_SESSION["message"]){
+                                    echo "<div class='alert alert-info'>".$_SESSION["message"]."</div>"; 
+                                    $_SESSION["message"]=null;
+                                }
+                        ?>
                         <p class="bg-success">
                             <?php echo $message; ?>
                         </p>
@@ -27,35 +33,29 @@
                                 <thead>
                                     <tr>
                                         <th>Id</th>
-                                        <th>Photo</th>
-                                        <th>Username</th>
-                                        <th>First Name</th>
-                                        <th>Last Name </th>
+                                        <th>Name</th>
+                                        <th>User name</th>
+                                        <th>Address</th>
+                                        <th>User Group</th>
+                                        <th>Email</th>
                                     </tr>
                                 </thead>
-                                <tbody>
-
-                                    <?php foreach($users as $user): ?>
-                                        <tr>
+                                <tbody> 
+                                    <?php require_once(dirname(__FILE__)."/../../resources/backend/controllers/userController.php");
+                                        foreach ((new userController())->allUsers() as $user) {
+                                            $user=json_decode($user);
+                                            echo "<tr>
+                                                <td>{$user->user_id}</td>
+                                                <td>{$user->first_name} {$user->last_name}</td>
+                                                <td>{$user->username}</td>
+                                                <td>{$user->address1}, {$user->address2}, {$user->city}, {$user->state}, {$user->zip}</td>
+                                                <td>{$user->user_group}</td>
+                                                <td>{$user->email}</td>
+                                                <td><a class='btn btn-danger' href='delete_user.php?del_user={$user->user_id}'><span class='glyphicon glyphicon-remove'></span></a></td>
+                                            </tr>";
+                                        }
+                                    ?>
     
-                                            <td>2</td>
-                                            <td><img class="admin-user-thumbnail user_image" src="placehold.it/62x62" alt=""></td>
-                                            
-                                            <td>Rico
-                                                <div class="action_links">
-                                                    <a href="">Delete</a>
-                                                    <a href="">Edit</a>
-                        
-                                                </div>
-                                            </td>
-                                            
-                                            
-                                            <td>Edwin</td>
-                                            <td>Diaz</td>
-                                        </tr>
-    
-                                    <?php endforeach; ?>
-
                                 </tbody>
                             </table> <!--End of Table-->
                     

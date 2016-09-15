@@ -14,6 +14,16 @@
         private $prod_image;
         private $quantity;
         
+        public function setValues($title,$categoryId,$price,$long_description,$short_description,$prod_image,$quantity){
+            $this->title=$title;
+            $this->categoryId=$categoryId;
+            $this->price=$price;
+            $this->long_description=$long_description;
+            $this->short_description=$short_description;
+            $this->prod_image=$prod_image;
+            $this->quantity=$quantity;
+        }
+        
         public function jsonSerialize() {
             return ["prod_id" => $this->prod_id, "title" => $this->title,
             "categoryId"=>$this->categoryId, "price"=>$this->price,
@@ -49,6 +59,20 @@
             }
             return $products;
         }
+        
+        public function save(){
+            try{
+                return (new Database())->getConnection()->exec("insert into product(title,categoryId, price,long_description,short_description,
+                prod_image,quantity) values('{$this->title}','{$this->categoryId}','$this->price','$this->long_description',
+                '$this->short_description','$this->prod_image','$this->quantity')");
+            }
+            catch(PDOException $e){
+                echo $e;
+                die("Category not saved.");
+            }
+        }
+        
+        
         
         public function getProductId(){
             return $this->prod_id;
@@ -109,8 +133,34 @@
                 die("Product not deleted.");
             }
         }
+        
+        public function update(){
+            try{
+                return (new Database())->getConnection()->exec("update product set title='$this->title',categoryId='$this->categoryId',price='$this->price',long_description='$this->long_description',
+                short_description='$this->short_description',prod_image='$this->prod_image', quantity='$this->quantity' where prod_id='$this->prod_id';");
+            }
+            catch(PDOException $e){
+                echo $e;
+                die("Product not updated.");
+            }
+        }
+        
+        
     }
     
+  /*  $product=new Product(14,"Laravel",2,44.99,"The most famous MVC framework","Laravel PHP","this image",5);
+    $product->hack();
+    var_dump($product->update());
+    
+    public function hack(){
+            $this->title="Hacked1";
+            $this->categoryId=1;
+            $this->price="22.36";
+            $this->long_description="Hacked2";
+            $this->short_description="Hacked3";
+            $this->prod_image="Hacked4";
+            $this->quantity=3000;
+        }
 /*   
     
     var_dump(Product::getProuductById(3));
@@ -124,4 +174,13 @@
     
      //Product::getProuductById(3)->setQuantity(28);
 
+
+/*
+       
+        
+                // 2 thiyena product eke hoya ganna. Eka setup karanna. update call karanna. 
+                //update product set title='Dummy',categoryId='2',price='34.45',long_description='long description',
+short_description='short_description',prod_image='prod_image', quantity='789' where prod_id=13; 
+
+*/
 ?>
