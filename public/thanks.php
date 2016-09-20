@@ -34,9 +34,6 @@
                         }
                     }
                     
-                    print_r([
-                        "transactionId"=>$_GET["tx"], "Currency"=>$_GET["cc"],"Amount"=>$_GET["amt"]
-                    ]);
                 }
                 else{
                     $_SESSION["message"]="Sorry the transaction was unsucessful. Please try again";

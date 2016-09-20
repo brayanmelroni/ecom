@@ -7,7 +7,7 @@
             $product=<<<"PRODUCT"
 <div class="col-md-3 col-sm-6 hero-feature">
     <div class="thumbnail">
-        <img src="{$stdProduct->prod_image}" alt=""> <!--http://placehold.it/800x500"-->
+        <img src="{$stdProduct->prod_image}" alt="" width="800" height="500">
                     <div class="caption">
                         <h3>{$stdProduct->title}</h3>
                         <p>{$stdProduct->short_description}</p>

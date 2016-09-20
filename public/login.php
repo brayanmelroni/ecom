@@ -45,7 +45,7 @@
                         if($userController->userGroup($currentUserId)=="admin")
                             echo "<script>window.location='admin'</script>";
                         else
-                            echo "<script> history.go(-2);</script>";
+                            echo "<script>window.location='index.php'</script>";
                     }
                     else
                         echo "<h2 class='text-center bg-danger'>Your e-mail or password was incorrect. Please try again.</h2>";

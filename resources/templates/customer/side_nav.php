@@ -1,5 +1,6 @@
 <div class="col-md-3">
-    <p class="lead">Shop Name</p>
+    <p class="lead">Purfleet Book Store</p>
+    
     <div class="list-group">
     <?php
         require_once(dirname(__FILE__)."/../../backend/controllers/categoryController.php"); 

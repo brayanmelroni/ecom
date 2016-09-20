@@ -12,8 +12,8 @@
 
             <!-- Jumbotron Header -->
             <header class="jumbotron hero-spacer">
-                <h1>Starbucks Book Shop</h1> 
-                <p>The Ultimate second hand book store in Islington</p>
+                <h1>Purfleet Book Store</h1> 
+                <p>The Ultimate second hand book store in Essex</p>
             </header>
 
             

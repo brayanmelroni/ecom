@@ -10,6 +10,7 @@
 
         <!-- Page Content -->
         <div class="container">
+           
         <!-- /.row --> 
             <div class="row">
                 <h1>Shopping Basket</h1>
@@ -91,7 +92,7 @@
 
                 <!--  ***********CART TOTALS*************-->
                             
-                <div class="col-xs-4 pull-right">
+                <div class="col-xs-6 pull-right">
                     <h2>Cart Totals</h2>
                 
                     <table class="table table-bordered" cellspacing="0">
@@ -118,10 +119,10 @@
 
              </div><!--Main Content-->
              
-
+        </header>
             <!-- Footer -->
             <?php require_once(TEMPLATE_CUSTOMER.DS."footer.php"); ?>
-
+        
         </div>
         <!-- /.container -->
     </body>

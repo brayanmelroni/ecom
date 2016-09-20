@@ -6,7 +6,7 @@
     $HTMLforProduct=<<<"PRODUCT"
 <div class="row">
         <div class="col-md-7">
-            <img class="img-responsive" src="{$product->prod_image}" alt="">      <!--http://placehold.it/700x600-->
+            <img class="img-responsive" src="{$product->prod_image}" alt="" width="700" height="600">
         </div>
         <div class="col-md-5">
             <div class="thumbnail">
