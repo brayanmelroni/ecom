@@ -10,7 +10,7 @@
         <div class="container">
 
             <header>
-                <h1 class="text-center">Login</h1>
+                <h1 class="text-center">Sign In</h1>
                 <div class="col-sm-4 col-sm-offset-5">         
                     <form class="" action="" method="post" enctype="multipart/form-data">
                         
@@ -25,7 +25,13 @@
                           <input type="submit" name="submit" class="btn btn-primary" id="login_submit">
                         </div>
                     </form>
-                </div>  
+                     
+                </div> 
+                <div class="col-sm-2 col-sm-offset-5"> 
+                        <div class="form-group"><label for="">
+                            New to website?<a href="registration.php" class="btn btn-default form-control">Create new account</a></label>
+                        </div>
+                </div>
                 
             </header>
         </div>
@@ -42,7 +48,7 @@
                             echo "<script> history.go(-2);</script>";
                     }
                     else
-                        echo "<h2 class='text-center bg-warning'>Your e-mail or password was incorrect. Please try again.</h2>";
+                        echo "<h2 class='text-center bg-danger'>Your e-mail or password was incorrect. Please try again.</h2>";
                 }
         ?>
         <!-- /.container -->

@@ -121,6 +121,8 @@
             try{
                 $results = Product::executeStatement("Orders cannot be retreived","select * from orderLine where prod_id = :id", [":id"=>$prod_id]);
                 if($results==null){
+                    $prod_image= Product::executeStatement("Image not found","select prod_image from product where prod_id= :id", [":id"=>$prod_id]);
+                    unlink($prod_image);
                     $connection=(new Database())->getConnection();
                     return $connection->exec("delete from product where prod_id='$prod_id'");
                 }
@@ -147,6 +149,12 @@
         
         
     }
+ 
+     //unlink("resources/uploads/text.png"); 
+    
+  //  $product=new Product(20,"Laravel",2,44.99,"The most famous MVC framework","Laravel PHP","this image",5);
+//    $product->save();
+  //  Product::deleteProduct(20);
     
   /*  $product=new Product(14,"Laravel",2,44.99,"The most famous MVC framework","Laravel PHP","this image",5);
     $product->hack();

@@ -30,19 +30,19 @@
                         <input type='hidden' name='zip' value='{$user->zip}'>";
                     ?>
                     <table class="table table-striped">
-                        <thead>
-                          <tr>
-                           <th>Product</th>
-                           <th>Price</th>
-                           <th>Quantity</th>
-                           <th>Sub-total</th>
-                     
-                          </tr>
+                        <?php require_once(dirname(__FILE__)."/../resources/backend/controllers/cartController.php");
+                            $cartController=new cartController();
+                            if($cartController->getTotalOfItems()!=0)
+                                echo 
+                        "<thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Sub-total</th>
+                            </tr>
                         </thead>
-                        <tbody>
-                            <?php
-                                require_once(dirname(__FILE__)."/../resources/backend/controllers/cartController.php");
-                                $cartController=new cartController();
+                        <tbody>";
                                 $counter=0;
                                 foreach($cartController->viewCart() as $product=>$quantity){
                                     if($quantity!=null){
@@ -78,6 +78,8 @@
                                         
                                     }
                                 }
+                                if($counter==0)
+                                    echo "Your Shopping Basket is empty";
                             ?>
                         </tbody>
                     </table>
@@ -89,7 +91,7 @@
 
                 <!--  ***********CART TOTALS*************-->
                             
-                <div class="col-xs-4 pull-right ">
+                <div class="col-xs-4 pull-right">
                     <h2>Cart Totals</h2>
                 
                     <table class="table table-bordered" cellspacing="0">

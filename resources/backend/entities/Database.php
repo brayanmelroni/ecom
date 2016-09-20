@@ -46,11 +46,12 @@ class Database{
         public function getAllUsers(){
             $users=[];
             foreach(self::executeStatement("Users not found","select * from user") as $result){
-                $products[]=new User($result->user_id,$result->first_name,$result->last_name,$result->address1,$result->address2,
+                $users[]=new User($result->user_id,$result->first_name,$result->last_name,$result->address1,$result->address2,
                 $result->city,$result->state,$result->zip,$result->username,$result->password,$result->user_group,$result->email);
             }
-            return $products;
+            return $users;
         }
+        
 }
 
     //var_dump((new Database())->getAllCategories());
@@ -66,5 +67,9 @@ class Database{
         echo "<hr/>";
     }*/
 
-    
+  /* foreach ((new Database())->getAllSlides() as $slide) {
+        echo "<hr/>";
+        var_dump($slide);
+        echo "<hr/>";
+    }*/
 ?>

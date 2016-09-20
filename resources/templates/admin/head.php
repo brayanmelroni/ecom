@@ -32,9 +32,10 @@
     <script type="text/javascript">
         $(document).ready(function() {
             $('.logout').on('click', function() {
-                  $.post( '/resources/backend/webservices/logout.php').success(function(resp){
+                $.post( '/resources/backend/webservices/logout.php').success(function(resp){
                      window.location.href='/public/index.php';
                 }); 
+            
             });
         });
     </script>

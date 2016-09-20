@@ -1,3 +1,8 @@
 .caption{
     height: 156px;
 }
+
+#messageArea{
+   height:40%;  
+   margin-bottom: 5px !important;
+} 

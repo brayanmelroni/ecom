@@ -4,8 +4,10 @@
 </nav>
 
 <?php
-    if($_SESSION["message"]){
-                echo "<div class='alert alert-info'>".$_SESSION["message"]."</div>"; 
-                $_SESSION["message"]=null;
+    
+    if($_SESSION["message"]!=null){
+        echo "<div class='alert alert-success' id='messageArea'>".$_SESSION["message"]."</div>"; 
+        $_SESSION["message"]=null;
     }
+    
 ?>

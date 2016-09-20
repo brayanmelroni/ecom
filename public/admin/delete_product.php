@@ -10,4 +10,5 @@
         product.";
     }
     echo "<script>window.location='"."products.php"."'</script>";
+    
 ?>
