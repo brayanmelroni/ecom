@@ -60,7 +60,7 @@
         
         <div role="tabpanel" class="tab-pane" id="profile">
 
-  <div class="col-md-12">
+    <div class="col-md-12">
 
        <h3>Reviews</h3>
 
@@ -115,7 +115,6 @@
  </div>
 
 </div>
-
 
 </div><!--Row for Tab Panel-->
 

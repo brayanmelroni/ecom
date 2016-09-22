@@ -43,7 +43,7 @@
                         $currentUserId=$user->user_id;
                         $userController->storeCurrentUserId($currentUserId);
                         if($userController->userGroup($currentUserId)=="admin")
-                            echo "<script>window.location='admin'</script>";
+                            echo "<script>window.location='admin/orders.php'</script>";
                         else
                             echo "<script>window.location='index.php'</script>";
                     }

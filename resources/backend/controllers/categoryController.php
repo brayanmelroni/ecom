@@ -1,13 +1,7 @@
 <?php
 
     require_once(dirname(__FILE__)."/..".DIRECTORY_SEPARATOR."entities/Database.php");
-  
-    
     class categoryController{
-        
-        public function getCategoryTitle($id){
-          return Category::getCategoryById($id)->getCatTitle();
-        }
         
         public function allCategories(){
             $jsonForAllCategories=[];
@@ -27,14 +21,15 @@
             return $jsonForProducts;
         }
         
+        public function getCategoryTitle($id){
+          return Category::getCategoryById($id)->getCatTitle();
+        }
+       
         public function saveCategory($catTitle){
-            if($catTitle!=null){
-                $category=new Category(null,$catTitle);
-                return $category->save();
-            }
-            else{
+            if($catTitle!=null)
+                return (new Category(null,$catTitle))->save();
+            else
                 return null;
-            }
         }
         
         public function deleteCategory($catId){
@@ -43,6 +38,7 @@
     }
     
 ?>
+
 
 
 

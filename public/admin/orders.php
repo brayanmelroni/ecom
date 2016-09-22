@@ -51,7 +51,7 @@
                                                 <td>{$row->post_address}</td>
                                                 <td>{$row->prod_description}</td>
                                                 <td>{$row->orderDate}</td>
-                                                <td><a class='btn btn-danger' id='btn_delete_order' href='delete_order.php?del_order={$row->order_id}' ><span class='glyphicon glyphicon-remove'></span></a></td>
+                                                <td><a class='btn btn-danger' id='btn_delete_order' href='/../../resources/backend/services/delete_order.php?del_order={$row->order_id}' ><span class='glyphicon glyphicon-remove'></span></a></td>
                                             </tr>";
                                         }
                                     ?>

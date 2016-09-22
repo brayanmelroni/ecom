@@ -2,7 +2,7 @@
             
             // Check whether a customer is loggged in before proceeding to payment.
             $('#inputCheckout').one('click', function() {
-                $.post( '/resources/backend/webservices/isLoggedIn.php').success(function(resp){
+                $.post( '/resources/backend/services/isLoggedIn.php').success(function(resp){
                     isLoggedIn = $.parseJSON(resp);
                     
                     if(isLoggedIn==true){
@@ -21,7 +21,7 @@
                 $(window).scrollTop(0);
             });
             
-            $.post( '/resources/backend/webservices/isLoggedIn.php').success(function(resp){
+            $.post( '/resources/backend/services/isLoggedIn.php').success(function(resp){
                     isLoggedIn = $.parseJSON(resp);
                     if(isLoggedIn==true){
                         $("#login").html("Logout");
@@ -35,7 +35,7 @@
             
             $('#login').on('click', function() {
                 if($('#login').html()=="Logout"){
-                    $.post( '/resources/backend/webservices/logout.php').success(function(resp){
+                    $.post( '/resources/backend/services/logout.php').success(function(resp){
                         window.location.href='/public/index.php';
                         return false;
                     });

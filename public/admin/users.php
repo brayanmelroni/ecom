@@ -51,7 +51,7 @@
                                                 <td>{$user->address1}, {$user->address2}, {$user->city}, {$user->state}, {$user->zip}</td>
                                                 <td>{$user->user_group}</td>
                                                 <td>{$user->email}</td>
-                                                <td><a class='btn btn-danger' href='delete_user.php?del_user={$user->user_id}'><span class='glyphicon glyphicon-remove'></span></a></td>
+                                                <td><a class='btn btn-danger' href='/../../resources/backend/services/delete_user.php?del_user={$user->user_id}'><span class='glyphicon glyphicon-remove'></span></a></td>
                                             </tr>";
                                         }
                                     ?>

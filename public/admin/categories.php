@@ -54,7 +54,7 @@
                                             echo "<tr>
                                                 <td>{$category->catId}</td>
                                                 <td>{$category->catTitle}</td>
-                                                <td><a class='btn btn-danger' id='btn_delete_order' href='deleteCategory.php?del_cat={$category->catId}' ><span class='glyphicon glyphicon-remove'></span></a></td>
+                                                <td><a class='btn btn-danger' id='btn_delete_order' href='/../../resources/backend/services/deleteCategory.php?del_cat={$category->catId}' ><span class='glyphicon glyphicon-remove'></span></a></td>
                                             </tr>";
                                         }
                                         

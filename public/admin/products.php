@@ -41,7 +41,6 @@
                               </tr>
                             </thead>
                             <tbody>
-                                <!--http://placehold.it/62x62-->
                                 <?php require_once(dirname(__FILE__)."/../../resources/backend/controllers/productController.php");
                                         foreach ((new productController())->allProducts() as $product) {
                                             $product=json_decode($product);
@@ -55,7 +54,7 @@
                                                 <td>{$product->long_description}</td>
                                                 <td>{$product->short_description}</td>
                                                 <td>{$product->quantity}</td>
-                                                <td><a class='btn btn-danger' href='delete_product.php?del_product={$product->prod_id}'><span class='glyphicon glyphicon-remove'></span></a></td>
+                                                <td><a class='btn btn-danger' href='/../../resources/backend/services/delete_product.php?del_product={$product->prod_id}'><span class='glyphicon glyphicon-remove'></span></a></td>
                                             </tr>";
                                         }
                                 ?>

@@ -28,7 +28,7 @@ class Database{
         
         public function getAllCategories(){
             $categories=[];
-            foreach(self::executeStatement("Categories not found","select * from category") as $result){
+            foreach(self::executeSelectStatement("Categories not found","select * from category") as $result){
                 $categories[]=new Category($result->catId,$result->catTitle);
             }
             return $categories;
@@ -36,7 +36,7 @@ class Database{
         
         public function getAllProducts(){
             $products=[];
-            foreach(self::executeStatement("Products not found","select * from product") as $result){
+            foreach(self::executeSelectStatement("Products not found","select * from product") as $result){
                 $products[]=new Product($result->prod_id,$result->title,$result->categoryId,$result->price,$result->long_description,
                 $result->short_description,$result->prod_image,$result->quantity);
             }
@@ -45,7 +45,7 @@ class Database{
         
         public function getAllUsers(){
             $users=[];
-            foreach(self::executeStatement("Users not found","select * from user") as $result){
+            foreach(self::executeSelectStatement("Users not found","select * from user") as $result){
                 $users[]=new User($result->user_id,$result->first_name,$result->last_name,$result->address1,$result->address2,
                 $result->city,$result->state,$result->zip,$result->username,$result->password,$result->user_group,$result->email);
             }
@@ -53,23 +53,4 @@ class Database{
         }
         
 }
-
-    //var_dump((new Database())->getAllCategories());
-   /* 
-    foreach ((new Database())->getAllProducts() as $product) {
-        echo "<hr/>";
-        var_dump($product);
-        echo "<hr/>";
-    }*/
-    /*foreach ((new Database())->getAllUsers() as $user) {
-        echo "<hr/>";
-        var_dump($user);
-        echo "<hr/>";
-    }*/
-
-  /* foreach ((new Database())->getAllSlides() as $slide) {
-        echo "<hr/>";
-        var_dump($slide);
-        echo "<hr/>";
-    }*/
 ?>

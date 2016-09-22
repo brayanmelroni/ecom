@@ -33,14 +33,4 @@ class orderController{
          return Order::deleteOrderWhenIdGiven($id); 
     }
 }
-
-//(new orderController())->saveOrder("xxxx345AB",1);
-/*foreach ((new orderController())->createOrderReport() as $order) {
-    var_dump($order); echo "<hr/>";
-}*/
-
-//(new orderController())->deleteOrder(180);
-
-
-
 ?>

@@ -15,7 +15,6 @@
         <div id="page-wrapper">
             <div class="container-fluid">
                 <div class="col-md-12">
-                
                     <div class="row">
                     <h1 class="page-header">
                        Add Product
@@ -23,8 +22,8 @@
                     </h1>
                     <?php
                         if($_SESSION["message"]){
-                        echo "<div class='alert alert-info'>".$_SESSION["message"]."</div>"; 
-                        $_SESSION["message"]=null;
+                            echo "<div class='alert alert-info'>".$_SESSION["message"]."</div>"; 
+                            $_SESSION["message"]=null;
                         }
                     ?>
                     </div>

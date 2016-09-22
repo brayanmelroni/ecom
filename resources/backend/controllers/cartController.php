@@ -27,9 +27,8 @@
             if ($quantityOfProduct > $_SESSION["product_" . $id]) {
                 $_SESSION["product_" . $id]++;
                 return $productTitle. " Added to the basket";
-            } else {
+            } else
                 return "Only " . $quantityOfProduct . " " . $productTitle . " item(s) found. New arrivals coming soon.";
-            }
         }
         
         
@@ -62,8 +61,7 @@
         
         public function getTotalOfItems(){
             $numItems=0;
-            $products=$this->viewCart();
-            foreach ($products as $product=>$quantity) {
+            foreach ($this->viewCart() as $product=>$quantity) {
                 $numItems+=(int)$quantity;
             }        
             return $numItems;
@@ -71,8 +69,7 @@
         
         public function getTotalPrice(){
             $total=0;
-            $products=$this->viewCart();
-            foreach ($products as $product=>$quantity) {
+            foreach ($this->viewCart() as $product=>$quantity) {
                 $product=json_decode($product);
                 $total+=$product->price*(int)$quantity;
             }        

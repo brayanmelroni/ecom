@@ -1,6 +1,9 @@
 <?php
     
-    // Web service to check whether a user is Logged In
+    /*
+     * A service to check whether a user is Logged In
+     */
+     
     session_start();
     require_once("../controllers/userController.php");
     $userController=new userController();
