@@ -14,8 +14,3 @@ Although no frameworks are used, it is always designed considering MVC architect
 
 3. Common code among views is contained to ecom/resources/templates folder. 
    Main views are found in ecom/public directory.
-
-Future Improvements: 
-This project was coded on Cloud 9 environment and there was a bug in Cloud 9 at that time. 
-    header("Location : $location"); was not properly redirecting to appropriate location. So that 
-    echo "<script>window.location='"."{$location}"."'</script>"has to be used as an alternative.
