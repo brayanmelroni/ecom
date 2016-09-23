@@ -54,6 +54,9 @@
          
         <?php
             include(dirname(__FILE__)."/../resources/backend/controllers/mailController.php"); 
+            /**
+            *  If all the required fields are provided an email will be sent. if there is an error, a message is displayed.  
+            */
             if($_POST["submit"]!=null){
                 if((new mailController())->sendMessage($_POST["name"],$_POST["email"],$_POST["subject"],$_POST["message"])){
                     echo "<div class='text-center alert alert-success'>Your message has been sent.</div>";

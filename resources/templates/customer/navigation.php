@@ -4,7 +4,10 @@
 </nav>
 
 <?php
-    
+    /**
+    *  If the session containes a value for session variable: message,  it is displayed.
+    *  Then the message session variable is set to null. 
+    */
     if($_SESSION["message"]!=null){
         echo "<div class='alert alert-success fade in' id='messageArea'> 
             <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>"

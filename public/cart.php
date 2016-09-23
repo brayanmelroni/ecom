@@ -21,6 +21,9 @@
                     <input type="hidden" name="currency_code" value="GBP">
                     <?php
                         require_once(dirname(__FILE__)."/../resources/backend/controllers/userController.php");
+                        /**
+                        * Retreving the information about current user. This information is required for payment processing. 
+                        */
                         $user=json_decode((new userController())->user($_SESSION["user_id"]));
                         echo "<input type='hidden' name='first_name' value='{$user->first_name}'>
                         <input type='hidden' name='last_name' value='{$user->last_name}'>
@@ -32,6 +35,9 @@
                     ?>
                     <table class="table table-striped">
                         <?php require_once(dirname(__FILE__)."/../resources/backend/controllers/cartController.php");
+                             /**
+                            * Retreving the total items in the cart. Cart is displayed only if there are items.
+                            */
                             $cartController=new cartController();
                             if($cartController->getTotalOfItems()!=0)
                                 echo 
@@ -46,6 +52,9 @@
                         <tbody>";
                                 $counter=0;
                                 foreach($cartController->viewCart() as $product=>$quantity){
+                                    /**
+                                    * Retreving the information about products in the cart and displaying. 
+                                    */
                                     if($quantity!=null){
                                         $product=json_decode($product);
                                         $title=$product->title;
@@ -90,7 +99,7 @@
                     ?>           
                 </form>
 
-                <!--  ***********CART TOTALS*************-->
+                <!--  ***********Displaying cart totals*************-->
                             
                 <div class="col-xs-6 pull-right">
                     <h2>Cart Totals</h2>

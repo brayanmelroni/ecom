@@ -22,6 +22,10 @@
                     
                     </h1>
                     <?php
+                        /**
+                        *  If the session containes a value for session variable: message,  it is displayed.
+                        *  Then the message session variable is set to null. 
+                        */ 
                         if($_SESSION["message"]){
                         echo "<div class='alert alert-info'>".$_SESSION["message"]."</div>"; 
                         $_SESSION["message"]=null;
@@ -34,6 +38,9 @@
                             <?php require_once(dirname(__FILE__)."/../../resources/backend/controllers/productController.php");
                                 $prod_id=$_GET["p_id"];
                                 $productController=new ProductController();
+                                /**
+                                *  Retreiving the information about the product with given id and displaying that information.
+                                */ 
                                 $product=json_decode($productController->getProduct($prod_id));
                             ?>
                             <div class='form-group'>
@@ -74,6 +81,9 @@
                                 <hr>
                                 <select name='product_category' id='' class='form-control'> ";
                                 <?php
+                                        /**
+                                        *  Displaying all Product Categories, with the current product's category selected.
+                                        */ 
                                         require_once(dirname(__FILE__)."/../../resources/backend/controllers/categoryController.php");
                                         $catController=new categoryController();
                                         foreach ($catController->allCategories() as $category) {
@@ -104,6 +114,9 @@
                         </aside><!--SIDEBAR--> 
                     </form>
                     <?php 
+                            /**
+                            *  Updating the product information. 
+                            */ 
                             move_uploaded_file($_FILES["file"]["tmp_name"],dirname(__FILE__)."/../../resources/uploads/".$_FILES["file"]["name"]);
                             $prod_image="/resources/uploads/".$_FILES["file"]["name"];
                             

@@ -17,7 +17,10 @@
                 <div class="container-fluid">
                     <h1 class="page-header">Product Categories</h1>
                      <?php
-                                
+                        /**
+                        *  If the session containes a value for session variable: message,  it is displayed.
+                        *  Then the message session variable is set to null. 
+                        */        
                         if($_SESSION["message"]){
                             echo "<div class='alert alert-info'>".$_SESSION["message"]."</div>"; 
                             $_SESSION["message"]=null;
@@ -49,6 +52,9 @@
                             <tbody>
                                 <?php require_once(dirname(__FILE__)."/../../resources/backend/controllers/categoryController.php");
                                         $catController=new categoryController();
+                                        /**
+                                        *  Information about all the existing categories are displayed. 
+                                        */
                                         foreach ($catController->allCategories() as $category) {
                                             $category=json_decode($category);
                                             echo "<tr>
@@ -58,7 +64,9 @@
                                             </tr>";
                                         }
                                         
-                                        
+                                        /**
+                                        *   The code to create a new category.   
+                                        */
                                         $status=$catController->saveCategory($_POST["cat_title"]);
                                         if($status!=null){
                                             $_SESSION["message"]="New Category was created";

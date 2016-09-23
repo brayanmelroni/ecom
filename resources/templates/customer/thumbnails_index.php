@@ -1,5 +1,11 @@
 <?php
     require_once(dirname(__FILE__)."/../../backend/controllers/productController.php"); 
+    /**
+    *  Information regarding all products is retreived from productController class in json encoded format.
+    *  It is decoded and a heredoc containing product information is created for each product. 
+    *  Then it is displayed to the user. 
+    */
+    
     $products=(new ProductController())->allProducts();
     foreach ($products as $product) {
         $stdProduct=json_decode($product);

@@ -9,13 +9,10 @@
     <title>Purfleet Book Store Admin Page</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/sb-admin.css" rel="stylesheet">
-
-    <!-- Morris Charts CSS -->
-    <link href="css/plugins/morris.css" rel="stylesheet">
+    <link href="../css/sb-admin.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -28,6 +25,8 @@
      <!-- jQuery -->
     <script src="js/jquery.js"></script>
     <script>
+        
+        // logging out a user and redirecting them to index page. 
         $(document).on('click','.logout', function(){
             $.post( '/resources/backend/services/logout.php').success(function(resp){
                 window.location.href='/public/index.php';

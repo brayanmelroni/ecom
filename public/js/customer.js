@@ -1,6 +1,6 @@
  $(document).ready(function(){
             
-            // Check whether a customer is loggged in before proceeding to payment.
+            // Checking whether a customer is loggged in before proceeding to payment.
             $('#inputCheckout').one('click', function() {
                 $.post( '/resources/backend/services/isLoggedIn.php').success(function(resp){
                     isLoggedIn = $.parseJSON(resp);
@@ -16,11 +16,12 @@
                 });
             });
             
-            
+            //  Setting the current vertical position of the scroll bar for window, when the window is about to be unloaded. 
             $(window).on('beforeunload', function() {
                 $(window).scrollTop(0);
             });
             
+            // checking whether there is a user logged in. 
             $.post( '/resources/backend/services/isLoggedIn.php').success(function(resp){
                     isLoggedIn = $.parseJSON(resp);
                     if(isLoggedIn==true){
@@ -33,6 +34,7 @@
                     }
             });
             
+            // logging out a user.
             $('#login').on('click', function() {
                 if($('#login').html()=="Logout"){
                     $.post( '/resources/backend/services/logout.php').success(function(resp){

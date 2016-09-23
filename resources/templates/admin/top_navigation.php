@@ -14,8 +14,12 @@
     <ul class="nav navbar-right top-nav">
         <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i>
+                
                 <?php  require_once(dirname(__FILE__)."/../../backend/controllers/userController.php"); 
-                   echo (new userController())->getNameOfLoggedUser(); 
+                   /**
+                    *  User name of the current user logged in is retreived and displayed. 
+                    */
+                    echo (new userController())->getNameOfLoggedUser(); 
                 ?> 
             <b class="caret"></b></a>
             <ul class="dropdown-menu">

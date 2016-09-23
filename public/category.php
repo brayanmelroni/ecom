@@ -13,6 +13,9 @@
         <!-- Jumbotron Header -->
         <header class="jumbotron hero-spacer">
              <?php  include(dirname(__FILE__)."/../resources/backend/controllers/categoryController.php");
+                    /**
+                    * Displaying the name of the category.  
+                    */
                     $categoryName=(new categoryController())->getCategoryTitle($_GET["catId"]);
                     echo "<h1>{$categoryName}</h1>";
              ?>

@@ -13,6 +13,12 @@
             <?php include(dirname(__FILE__)."/../resources/backend/controllers/orderController.php");
                 $cartController=new cartController();
                 if($_GET["st"]=="Completed" && $cartController->getTotalPrice()>0){
+                    /**
+                    *  On a successful transaction completion, a success message is displayed to the user with an order id. 
+                    *  Information regarding all the products user bought and the total price he/she paid also displayed. 
+                    *  
+                    *  If transaction is unsuccessful, a failure message is displayed.  
+                    */
                     $orderId=(new orderController())->saveOrder($_GET["tx"],$_SESSION["user_id"]);
                     echo "<div class='text-center alert alert-success'><h4>Your order was successfully placed.<br/>
                     Your order number is {$orderId}.</h4></div>";

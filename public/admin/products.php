@@ -21,6 +21,10 @@
                         </h1>
                         <div class="message">
                             <?php
+                                /**
+                                *  If the session containes a value for session variable: message,  it is displayed.
+                                *  Then the message session variable is set to null. 
+                                */ 
                                 if($_SESSION["message"]!=null){
                                     echo "<div class='alert alert-info'>".$_SESSION["message"]."</div>"; 
                                     $_SESSION["message"]=null;
@@ -42,6 +46,10 @@
                             </thead>
                             <tbody>
                                 <?php require_once(dirname(__FILE__)."/../../resources/backend/controllers/productController.php");
+                                        /**
+                                        *  Displaying information about all the products. 
+                                        *  Adding new products, updating existing products can be initiated from  this page. 
+                                        */ 
                                         foreach ((new productController())->allProducts() as $product) {
                                             $product=json_decode($product);
                                             echo "<tr>

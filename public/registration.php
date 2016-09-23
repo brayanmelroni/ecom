@@ -66,7 +66,10 @@
                                    <input type="Submit" name="save_user" class="btn btn-primary pull-right" value="Save" >
                                   
                             </form>
-                            <?php include(dirname(__FILE__)."/../resources/backend/controllers/userController.php"); 
+                            <?php include(dirname(__FILE__)."/../resources/backend/controllers/userController.php");
+                                /**
+                                *  Registering a new user, if all the fields have been correctly filled. 
+                                */
                                 $first_name=$_POST["first_name"];
                                 $last_name=$_POST["last_name"];
                                 $address_1=$_POST["address_1"];

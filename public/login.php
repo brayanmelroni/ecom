@@ -37,6 +37,12 @@
         </div>
         <?php include(dirname(__FILE__)."/../resources/backend/controllers/userController.php"); 
                 if($_POST["username"]!=null && $_POST["password"]!=null){
+                    /**
+                    * Checking the user is authorised, 
+                    * If not an error message is displayed to the user.
+                    * If authorised the user's user group is checked. If the user belongs to admin group the user is directed to admin pages, else
+                    * the user is directed to home page. 
+                    */
                     $userController=new userController();
                     $user=json_decode($userController->getUserIfAuthorized($_POST["username"],$_POST["password"]));
                     if($user==!null){

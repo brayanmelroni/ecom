@@ -1,13 +1,13 @@
 <?php
-    
-    /*
-     * A service to check whether a user is Logged In
-     */
-     
+  
     session_start();
     require_once("../controllers/userController.php");
-    $userController=new userController();
-    $status=json_encode($userController->isLoggedIn());
+    
+    /**
+    *  This PHP file executes isLoggedIn function in userController class.
+    *  Then the status of whether a user is logged in or not is displayed in an json encoded format. 
+    */
+    $status=json_encode((new userController())->isLoggedIn());
     echo $status;
 ?>
 

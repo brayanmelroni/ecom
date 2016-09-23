@@ -21,6 +21,10 @@
                     
                     </h1>
                     <?php
+                        /**
+                        *  If the session containes a value for session variable: message,  it is displayed.
+                        *  Then the message session variable is set to null. 
+                        */
                         if($_SESSION["message"]){
                             echo "<div class='alert alert-info'>".$_SESSION["message"]."</div>"; 
                             $_SESSION["message"]=null;
@@ -71,7 +75,11 @@
                                 <label for="product-title">Product Category</label>
                                 <hr>
                                 <select name="product_category" id="" class="form-control">
+                                    
                                     <?php require_once(dirname(__FILE__)."/../../resources/backend/controllers/categoryController.php");
+                                        /**
+                                        *  All the categories are retreived and their names are presented, so that one category could be selected. 
+                                        */
                                         $catController=new categoryController();
                                         foreach ($catController->allCategories() as $category) {
                                             $category=json_decode($category);
@@ -97,7 +105,10 @@
                         </aside><!--SIDEBAR-->
                     </form>
                     <?php require_once(dirname(__FILE__)."/../../resources/backend/controllers/productController.php");
-                        
+                        /**
+                        *  If all the input variables are entered correctly, information regarding new product is saved and a success message 
+                        *  is displayed, else an error message is displayed. 
+                        */
                         if($_POST['product_title']!=null && $_POST["product_category"]!=null && $_POST["product_price"]!=null
                         && $_POST["long_description"]!=null && $_POST["short_description"]!=null && $_POST["product_quantity"]!=null){
                             

@@ -18,7 +18,10 @@
                         <h1 class="page-header">All Orders</h1>
                         <div class="message">
                             <?php
-                                
+                                /**
+                                *  If the session containes a value for session variable: message,  it is displayed.
+                                *  Then the message session variable is set to null. 
+                                */ 
                                 if($_SESSION["message"]){
                                     echo "<div class='alert alert-info'>".$_SESSION["message"]."</div>"; 
                                     $_SESSION["message"]=null;
@@ -41,6 +44,10 @@
                                 </thead>
                                 <tbody id="order_details">
                                     <?php require_once(dirname(__FILE__)."/../../resources/backend/controllers/orderController.php");
+                                        /**
+                                        *  Displaying a comprehensive report about the orders.
+                                        *  An order can also be deleted via this page. 
+                                        */ 
                                         foreach ((new orderController())->createOrderReport() as $row) {
                                             $row=json_decode($row);
                                             echo "<tr>

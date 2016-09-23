@@ -1,5 +1,10 @@
 <?php 
     require_once(dirname(__FILE__)."/../../backend/controllers/categoryController.php"); 
+    /**
+    *  Information regarding products under a given category is retreived from categoryController class in json encoded format.
+    *  It is decoded and a heredoc containing product information is created for each product. 
+    *  Then it is displayed to the user. 
+    */
     $products=(new categoryController())->ProductsUnderCategory($_GET["catId"]);
     
     foreach ($products as $product) {

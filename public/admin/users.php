@@ -16,6 +16,10 @@
                     <div class="col-lg-12">
                         <h1 class="page-header">Users</h1>
                         <?php
+                                /**
+                                *  If the session containes a value for session variable: message,  it is displayed.
+                                *  Then the message session variable is set to null. 
+                                */ 
                                 if($_SESSION["message"]){
                                     echo "<div class='alert alert-info'>".$_SESSION["message"]."</div>"; 
                                     $_SESSION["message"]=null;
@@ -42,6 +46,10 @@
                                 </thead>
                                 <tbody> 
                                     <?php require_once(dirname(__FILE__)."/../../resources/backend/controllers/userController.php");
+                                        /**
+                                        *  Displaying information about all users.
+                                        *  Two actions: New user creation, deleting a new user also can be initiated from this page. 
+                                        */ 
                                         foreach ((new userController())->allUsers() as $user) {
                                             $user=json_decode($user);
                                             echo "<tr>

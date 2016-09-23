@@ -18,6 +18,10 @@
                         <div class="row">
                             <h1 class="page-header">Add User</h1>
                             <?php
+                                /**
+                                *  If the session containes a value for session variable: message,  it is displayed.
+                                *  Then the message session variable is set to null. 
+                                */
                                 if($_SESSION["message"]){
                                     echo "<div class='alert alert-info'>".$_SESSION["message"]."</div>"; 
                                     $_SESSION["message"]=null;
@@ -96,6 +100,10 @@
 
                             </form>
                             <?php require_once(dirname(__FILE__)."/../../resources/backend/controllers/userController.php");
+                                /**
+                                *  If all the input variables are entered correctly, information regarding new user is saved and a success message 
+                                *  is displayed. 
+                                */
                                 $first_name=$_POST["first_name"];
                                 $last_name=$_POST["last_name"];
                                 $address_1=$_POST["address_1"];
