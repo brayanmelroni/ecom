@@ -1,8 +1,7 @@
-<strong>E Commerce Store developed using Object Oriented PHP</strong>
+<strong><h1>E Commerce Store developed using Object Oriented PHP</h1></strong>
 
-This is an eCommerce Store developed purely using Object oriented PHP, MySQL, JQuery, Bootstrap, CSS and HTML5.
-
-Although no frameworks are used, it is always designed considering MVC architectute. 
+<p>This is an eCommerce Store developed purely using Object oriented PHP, MySQL, JQuery, Bootstrap, CSS and HTML5.
+Although no frameworks are used, it is always designed considering MVC architectute.</p>
 
 <ul>
     <li>
