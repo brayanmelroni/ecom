@@ -12,5 +12,5 @@ Although no frameworks are used, it is always designed considering MVC architect
 2. All the business logic is constrained to controller classes found in ecom/resources/backend/controllers folder.
    Views are only accessing controller classes. Views do not directly access entity classes. 
 
-3. Common code among views is contained to ecom/resources/templates folder. 
+3. Common code among views is contained in ecom/resources/templates folder. 
    Main views are found in ecom/public directory.
